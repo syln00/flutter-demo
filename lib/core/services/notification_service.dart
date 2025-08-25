@@ -17,7 +17,7 @@ class NotificationService {
 
     // 1. 定义 Android 的初始化设置
     // 'app_icon' 是一个占位符，它会自动使用应用在 'android/app/src/main/res/mipmap' 目录下的默认图标
-    const AndroidInitializationSettings androidSettings = AndroidInitializationSettings('app_icon');
+    const AndroidInitializationSettings androidSettings = AndroidInitializationSettings('mipmap/ic_launcher');
 
     // 2. 定义 iOS 的初始化设置
     const DarwinInitializationSettings darwinSettings = DarwinInitializationSettings(

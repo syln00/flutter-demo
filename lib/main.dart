@@ -1,4 +1,6 @@
 import 'package:demo/core/services/background_service_handler.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_background_service/flutter_background_service.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -19,6 +21,7 @@ Future<void> initializeBackgroundService() async {
       onStart: onStart, // 服务启动时执行的函数
       isForegroundMode: true, // 启用前台模式
       autoStart: true, // 应用启动时自动启动服务
+      notificationChannelId: 'my_foreground_service', // 添加通知渠道ID
       // 前台服务通知的初始配置
       foregroundServiceNotificationId: 888,
       initialNotificationTitle: '后台服务',
@@ -27,12 +30,34 @@ Future<void> initializeBackgroundService() async {
   );
 }
 
+/// 请求通知权限
+Future<void> requestNotificationPermissions() async {
+  final messaging = FirebaseMessaging.instance;
+  final settings = await messaging.requestPermission(
+    alert: true,
+    announcement: false,
+    badge: true,
+    carPlay: false,
+    criticalAlert: false,
+    provisional: false,
+    sound: true,
+  );
+
+  print('用户授予的通知权限: ${settings.authorizationStatus}');
+}
+
 void main() async { // main函数改为异步
   // 确保Flutter引擎绑定已初始化
   WidgetsFlutterBinding.ensureInitialized();
 
+  // 初始化 Firebase
+  await Firebase.initializeApp();
+
   // 初始化后台服务
   await initializeBackgroundService();
+
+  // 请求通知权限
+  await requestNotificationPermissions();
 
   // 运行应用
   runApp(

@@ -1,5 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <!-- 后台服务所需权限 -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK"/>
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <!-- Android 13+ 需要通知权限来显示前台服务的通知 -->
@@ -38,6 +39,9 @@
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
+
+        <meta-data android:name="id.flutter.flutter_background_service.default_notification_channel_name" android:value="后台服务通知" />
+        <meta-data android:name="id.flutter.flutter_background_service.default_notification_channel_description" android:value="用于保持应用在后台运行和播放音频" />
 
         <service
             android:name="id.flutter.flutter_background_service.BackgroundService"

@@ -29,7 +29,7 @@ Future<bool> onStart(ServiceInstance service) async {
 
   service.on('playAudio').listen((event) async {
     try {
-      await audioPlayer.setUrl('https://www.soundjay.com/buttons/sounds/button-16.mp3');
+      await audioPlayer.setUrl('https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3');
       audioPlayer.play();
       service.invoke('update', {'message': '音频播放成功'});
     } catch (e) {
