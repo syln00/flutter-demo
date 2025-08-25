@@ -39,6 +39,10 @@
             android:name="flutterEmbedding"
             android:value="2" />
 
+        <service
+            android:name="id.flutter.flutter_background_service.BackgroundService"
+            android:foregroundServiceType="mediaPlayback" />
+
         <!-- just_audio 后台播放所需服务 -->
         <service android:name="com.ryanheise.audioservice.AudioService"
             android:foregroundServiceType="mediaPlayback"

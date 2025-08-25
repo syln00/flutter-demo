@@ -1,0 +1,577 @@
+--------- beginning of system
+08-25 17:45:00.822  2751  2872 V WindowManagerShell: Transition requested: android.os.BinderProxy@5dad4ed TransitionRequestInfo { type = CLOSE, triggerTask = null, remoteTransition = null, displayChange = null }
+08-25 17:45:00.822  1771  3002 W WindowManager: Changing focus from Window{7f5018a u0 com.example.demo/com.example.demo.MainActivity} to null displayId=0 Callers=com.android.server.wm.RootWindowContainer.updateFocusedWindowLocked:561 com.android.server.wm.WindowManagerService.updateFocusedWindowLocked:6965 com.android.server.wm.ActivityRecord.onRemovedFromDisplay:5228 com.android.server.wm.DisplayContent.removeAppToken:1757 
+08-25 17:45:00.822  1771  1951 W RescuePartyPlus: This device support and enable RescuePartyPlus! (Via cloud control)
+08-25 17:45:00.822  1771  3002 I WindowManager: cancelAnimation removed leash : Surface(name=Surface(name=ea4b6c6 NavigationBar0#92)/@0xaa29b4 - animation-leash of insets_animation#466492)/@0x58828ad
+--------- beginning of main
+08-25 17:45:00.822  1026  1788 E BufferQueueDebug: [Surface(name=ea4b6c6 NavigationBar0#92)/@0xaa29b4 - animation-leash of insets_animation#466498](this:0xb40000717c831a50,id:-1,api:0,p:-1,c:-1) id info cannot be read from 'Surface(name=ea4b6c6 NavigationBar0#92)/@0xaa29b4 - animation-leash of insets_animation#466498'
+08-25 17:45:00.823  1026  1788 I BufferQueueDebug: [Surface(name=ea4b6c6 NavigationBar0#92)/@0xaa29b4 - animation-leash of insets_animation#466498](this:0xb40000717c831a50,id:-1,api:0,p:-1,c:-1) BufferQueue core=(1026:/system/bin/surfaceflinger)
+08-25 17:45:00.824  1771  3002 I WindowManager: cancelAnimation removed leash : Surface(name=Surface(name=6c66e2a StatusBar#97)/@0x41889b8 - animation-leash of insets_animation#466493)/@0x8a6d773
+08-25 17:45:00.824  1026  1788 E BufferQueueDebug: [Surface(name=6c66e2a StatusBar#97)/@0x41889b8 - animation-leash of insets_animation#466499](this:0xb40000717c858a50,id:-1,api:0,p:-1,c:-1) id info cannot be read from 'Surface(name=6c66e2a StatusBar#97)/@0x41889b8 - animation-leash of insets_animation#466499'
+08-25 17:45:00.824  1026  1788 I BufferQueueDebug: [Surface(name=6c66e2a StatusBar#97)/@0x41889b8 - animation-leash of insets_animation#466499](this:0xb40000717c858a50,id:-1,api:0,p:-1,c:-1) BufferQueue core=(1026:/system/bin/surfaceflinger)
+08-25 17:45:00.825  4591  5205 D DigestGenerator: digest=============com.example.demojava.lang.RuntimeException: Unable to create service id.flutter.flutter_background_service.BackgroundService: android.app.MissingForegroundServiceTypeException: Starting FGS without a type  callerApp=ProcessRecord{XX XX:com.example.demo/ua} targetSDK=XX
+08-25 17:45:00.825  4591  5205 D DigestGenerator: at android.app.ActivityThread.handleCreateService(ActivityThread.java:XX)
+08-25 17:45:00.825  4591  5205 D DigestGenerator: at android.app.ActivityThread.-$$Nest$mhandleCreateService(Unknown Source:)
+08-25 17:45:00.825  4591  5205 D DigestGenerator: at android.app.ActivityThread$H.handleMessage(ActivityThread.java:XX)
+08-25 17:45:00.825  4591  5205 D DigestGenerator: at android.os.Handler.dispatchMessage(Handler.java:XX)
+08-25 17:45:00.825  4591  5205 D DigestGenerator: at android.os.Looper.loopOnce(Looper.java:XX)
+08-25 17:45:00.825  4591  5205 D DigestGenerator: at android.os.Looper.loop(Looper.java:XX)
+08-25 17:45:00.825  4591  5205 D DigestGenerator: at android.app.ActivityThread.main(ActivityThread.java:XX)
+08-25 17:45:00.825  4591  5205 D DigestGenerator: at java.lang.reflect.Method.invoke(Native Method)
+08-25 17:45:00.825  4591  5205 D DigestGenerator: at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:XX)
+08-25 17:45:00.825  4591  5205 D DigestGenerator: at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:XX)
+08-25 17:45:00.825  4591  5205 D DigestGenerator: Caused by: android.app.MissingForegroundServiceTypeException: Starting FGS without a type  callerApp=ProcessRecord{XX XX:com.example.demo/ua} targetSDK=XX
+08-25 17:45:00.825  4591  5205 D DigestGenerator: at android.app.MissingForegroundServiceTypeException$.createFromParcel(MissingForegroundServiceTypeException.java:XX)
+08-25 17:45:00.825  4591  5205 D DigestGenerator: at android.app.MissingForegroundServiceTypeException$.createFromParcel(MissingForegroundServiceTypeException.java:XX)
+08-25 17:45:00.825  4591  5205 D DigestGenerator: at android.os.Parcel.readParcelableInternal(Parcel.java:XX)
+08-25 17:45:00.825  4591  5205 D DigestGenerator: at android.os.Parcel.readParcelable(Parcel.java:XX)
+08-25 17:45:00.825  4591  5205 D DigestGenerator: at android.os.Parcel.createExceptionOrNull(Parcel.java:XX)
+08-25 17:45:00.825  4591  5205 D DigestGenerator: at android.os.Parcel.createException(Parcel.java:XX)
+08-25 17:45:00.825  4591  5205 D DigestGenerator: at android.os.Parcel.readException(Parcel.java:XX)
+08-25 17:45:00.825  4591  5205 D DigestGenerator: at android.os.Parcel.readException(Parcel.java:XX)
+08-25 17:45:00.825  4591  5205 D DigestGenerator: at android.app.IActivityManager$Stub$Proxy.setServiceForeground(IActivityManager.java:XX)
+08-25 17:45:00.825  4591  5205 D DigestGenerator: at android.app.Service.startForeground(Service.java:XX)
+08-25 17:45:00.825  4591  5205 D DigestGenerator: at k.XX.a(SourceFile:XX)
+08-25 17:45:00.825  4591  5205 D DigestGenerator: at id.flutter.flutter_background_service.BackgroundService.updateNotificationInfo(SourceFile:XX)
+08-25 17:45:00.825  4591  5205 D DigestGenerator: at id.flutter.flutter_background_service.BackgroundService.onCreate(SourceFile:XX)
+08-25 17:45:00.825  4591  5205 D DigestGenerator: at android.app.ActivityThread.handleCreateService(ActivityThread.java:XX)
+08-25 17:45:00.825  1771  3002 D WindowManager: wms.Input focus has changed to null display=0 updateInputWindows = true
+08-25 17:45:00.826  1771  3002 I MultiSenceManagerInternalStub: getInstance
+08-25 17:45:00.826  1771  3002 D PerfMTKStubImpl: perfLockAcquire
+08-25 17:45:00.826  4591  5205 W JavaExceptionHandler: Too noisy! skip duplicate java exception report:com.example.demo now=1756115100826 mLastReportTime=1756115093238 interval=60000
+08-25 17:45:00.826  1771  3002 I mtkpower_client: perf_lock_acq, hdl:1583872, dur:400, num:12, pid:1771, tid:3002
+08-25 17:45:00.826  4591  5205 W MQSEventManager: begin to storeEvent
+08-25 17:45:00.827  4591  5205 W DatabaseUtils: je not allow store to db.
+08-25 17:45:00.827  4591  5205 D MQSEventManager: send MSG_JUDGE_TRANSMISSION packageName com.example.demo
+08-25 17:45:00.827  4591  5205 W JavaExceptionHandler: Too noisy! skip duplicate java exception report:com.example.demo now=1756115100827 mLastReportTime=1756115093238 interval=60000
+08-25 17:45:00.827  4591  5205 W MQSEventManager: Too noisy! Bail the event:com.example.demo type:1
+08-25 17:45:00.827  1771  3002 I mtkpower_client: ret_hdl:1583875
+08-25 17:45:00.827  1771  3002 I PowerHalWrapper: <amsBoostResume> last:null, next:com.miui.home 
+08-25 17:45:00.828  1771  3002 D WindowManager: Collecting in transition 41496: ActivityRecord{382c2a1 u0 com.miui.home/.launcher.Launcher t2} init visibleRequested:false
+08-25 17:45:00.828  1771  1935 D ActivityManager: mediaResourceManagerBinder get success
+08-25 17:45:00.828   975  1050 I libPowerHal: [perfLockAcq] idx:0 hdl:1583875 hint:-1 pid:1771 tid:3002 duration:400 lock_user:system_server => ret_hdl:1583875
+08-25 17:45:00.828   975  1050 I libPowerHal: [setClusterFreq] system_server set cpufreq[0] min:2000000 max:-1 cpufreq[1] min:2500000 max:-1 
+08-25 17:45:00.828   975  1050 I libPowerHal: [setGPUFreq] system_server user set gpu freq min:0, max:-1
+08-25 17:45:00.828   975  1050 I libPowerHal: system_server: set gpu opp level max: 0
+08-25 17:45:00.828  1288  1288 D ResourceManagerService: update package name: com.miui.home
+08-25 17:45:00.829   975  1050 I libPowerHal: [setGPUFreq] Soft min/max = (0, 0); Hard min/max = (35, 0)
+08-25 17:45:00.829   975  1050 I libPowerHal: [setGPUFreq] final min/max = (0, 0)
+08-25 17:45:00.829   975  1050 I libPowerHal: system_server: set gpu opp level: 0
+08-25 17:45:00.829   975  1050 I libPowerHal: system_server: set gpu opp level max: 0
+08-25 17:45:00.829  1771  3002 W AppStandbyController: Tried to restrict recently used app: com.example.demo due to 1540
+08-25 17:45:00.830  2380  2380 D Launcher: Launcher.DeviceConfig onResume bounds = Rect(0, 0 - 1220, 2712)
+08-25 17:45:00.830   975  1050 I libPowerHal: [perfLockAcq] idx:5 hdl:1583876 hint:22 pid:975 tid:975 duration:10000 lock_user:vendor.mediatek => ret_hdl:1583876
+08-25 17:45:00.830   975  1050 I libPowerHal: [setClusterFreq] MTKPOWER_HINT_PACK_SWITCH set cpufreq[0] min:2000000 max:-1 cpufreq[1] min:2500000 max:-1 
+08-25 17:45:00.830  2380  2380 D Launcher.Lifecycle: onResume:UserHandle{0},5908702,false
+08-25 17:45:00.830  2380  2380 W Settings: Setting device_provisioned has moved from android.provider.Settings.Secure to android.provider.Settings.Global.
+08-25 17:45:00.831   975  1050 I libPowerHal: [perfLockRel] hdl:1583874, idx:12
+08-25 17:45:00.831  1771  6227 D WindowManager: Set transition=TransitionRecord{f72c065 id=41496 type=CLOSE flags=0x10}, ready=true, SyncId=41496 
+08-25 17:45:00.831  2751  2872 D MiuiFullScreenTaskRepository: removeFocusedTask displayId=0
+08-25 17:45:00.832  2751  2872 D MiuiFullScreenTaskRepository: addOrUpdateFullScreenTaskInfo taskId=6484, topActivity=null
+08-25 17:45:00.832  1288  1288 D ResourceManagerService: packageName: com.miui.home, uid : 10132, hashCode : 241690589
+08-25 17:45:00.832  1288  1288 D ResourceManagerService: ResourceManagerService::setCodecsVppMode
+08-25 17:45:00.832  1288  1288 D ResourceManagerService: all codecs setVppMode return fail
+08-25 17:45:00.832  2380  2380 D SoscSplitStateController: updateDividerFixedState: isFixed = true
+08-25 17:45:00.832  2380  2380 E Launcher.application: setClickAppWaitForCallback = false
+08-25 17:45:00.832  2380  2380 D Launcher.FullbackHome: FallbackHomeCompat::needKillSelf::needKillSelf = false
+08-25 17:45:00.832  2380  3034 D MiBridge: requestCpuHighFreq---- uid: 10132 level: 1 timeoutms:500
+08-25 17:45:00.832  2380  2380 D Launcher_UnlockAnimationStateMachine: onResume = IDLE
+08-25 17:45:00.832  2751  2872 D SoScSplitScreenController: updateDividerFixedState isFixed:true
+08-25 17:45:00.832  1289  1305 W MiuiBooster: "MiuiBoosterService requestCpuHighFreq: 10132, 1, 500"
+08-25 17:45:00.833  2380  2380 I Launcher: changeMIUIWidgetEditMode false
+08-25 17:45:00.833  4823  7297 D LauncherOverlay: setActivityState:3
+08-25 17:45:00.833  2380  2380 D NavStubView: setAssistantInEditMode: false
+08-25 17:45:00.833  1289  1305 W MiuiBooster: "requestCpuHighFreq,final level:1,final timeoutms:500"
+08-25 17:45:00.833  1289  1305 W MiuiBooster: "perf_hint_hc start"
+08-25 17:45:00.833  2380  2380 I Launcher.widget: onInvisible null
+08-25 17:45:00.833  2380  2380 I Launcher.widget: onInvisible null
+08-25 17:45:00.835  1771  3002 I ActivityManager: Killing 19322:com.example.demo/u0a335 (adj 0): crash
+08-25 17:45:00.837  1289  1305 W MiuiBooster: "perf_handle:1583877"
+08-25 17:45:00.838  4591  5206 D MQSEventManager: begin call thirdappassistant
+08-25 17:45:00.839  1771  1936 I BLASTSyncEngine: SyncGroup 41496:  Unfinished container:ActivityRecord{382c2a1 u0 com.miui.home/.launcher.Launcher t2}
+08-25 17:45:00.839  1771  1936 I ActivityRecordImpl: isReadyForStartingWindow topActivity = ActivityRecord{382c2a1 u0 com.miui.home/.launcher.Launcher t2} isLaunchSourceTypeHome = false topActivity.mStartingWindow = null topActivity.mStartingData = null topActivity.finishing = false
+08-25 17:45:00.839  1771  1936 I BLASTSyncEngine: isActivitySyncFinished isSyncFinished false ActivityRecord{382c2a1 u0 com.miui.home/.launcher.Launcher t2}
+08-25 17:45:00.839   975  1050 I libPowerHal: [perfLockAcq] idx:9 hdl:1583877 hint:-1 pid:1289 tid:1305 duration:500 lock_user:miuibooster => ret_hdl:1583877
+08-25 17:45:00.839   975  1050 I ExtendedPerfBoost: [thermalbreak_verification] miuibooster
+08-25 17:45:00.839   975  1050 I ThermalBreakConfigReader: [getTargetfreqinfo] [getTargetfreqinfo] hint get target result freq:boost:1 cpu0:2000000 cpu4:2500000 cpumask:ff
+08-25 17:45:00.839   975  1050 I ExtendedPerfBoost: [thermalbreak_verification] needbreak curr breakmode 2, scence id 0, set: boost:1 cpu0:2000000 cpu4:2500000 cpumask:ff
+08-25 17:45:00.839   975  1050 I ExtendedPerfBoost: [triggerList_add] [triggerList_add] come into triggerList_add
+08-25 17:45:00.839  1771  1933 D DisplayManagerService: Drop pending events for gone uid 10335
+08-25 17:45:00.839   975  1050 I ExtendedPerfBoost: [triggerList_add] get item from freelist 0x793db5b608
+08-25 17:45:00.840   975  1050 I ExtendedPerfBoost: [triggerList_add] init new item prio:1, duration:500, param:boost:1 cpu0:2000000 cpu4:2500000 cpumask:ff
+08-25 17:45:00.840   975  1050 I ExtendedPerfBoost: [trig_thermalbreak] curr target time is same last target time
+08-25 17:45:00.840   975  1050 I ExtendedPerfBoost: [setThermalBreak] [setThermalBreak] : boost:1 cpu0:2000000 cpu4:2500000 cpumask:ff
+08-25 17:45:00.840  4823  4823 I LauncherOverlayCallback: handleMessage WHAT_ACTIVITY_STATE_CHANGED what：3
+08-25 17:45:00.840  4823  4823 D LauncherOverlay.Window: onResume
+08-25 17:45:00.840  1771  3002 V ActivityManager: Bringing down ServiceRecord{e59f02e u0 com.example.demo/id.flutter.flutter_background_service.BackgroundService} android.content.Intent$FilterComparison@4434fbb9
+08-25 17:45:00.840  1771  3002 V ActivityManager: java.lang.RuntimeException
+08-25 17:45:00.840  1771  3002 V ActivityManager: 	at com.android.server.am.ActiveServices.bringDownServiceLocked(ActiveServices.java:5842)
+08-25 17:45:00.840  1771  3002 V ActivityManager: 	at com.android.server.am.ActiveServices.killServicesLocked(ActiveServices.java:6780)
+08-25 17:45:00.840  1771  3002 V ActivityManager: 	at com.android.server.am.ActivityManagerService.cleanUpApplicationRecordLocked(ActivityManagerService.java:13817)
+08-25 17:45:00.840  1771  3002 V ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:3583)
+08-25 17:45:00.840  1771  3002 V ActivityManager: 	at com.android.server.am.ProcessList.removeProcessLocked(ProcessList.java:3250)
+08-25 17:45:00.840  1771  3002 V ActivityManager: 	at com.android.server.am.ProcessList.removeProcessLocked(ProcessList.java:3199)
+08-25 17:45:00.840  1771  3002 V ActivityManager: 	at com.android.server.am.AppErrors.handleAppCrashLSPB(AppErrors.java:945)
+08-25 17:45:00.840  1771  3002 V ActivityManager: 	at com.android.server.am.AppErrors.makeAppCrashingLocked(AppErrors.java:786)
+08-25 17:45:00.840  1771  3002 V ActivityManager: 	at com.android.server.am.AppErrors.crashApplicationInner(AppErrors.java:655)
+08-25 17:45:00.840  1771  3002 V ActivityManager: 	at com.android.server.am.AppErrors.crashApplication(AppErrors.java:580)
+08-25 17:45:00.840  1771  3002 V ActivityManager: 	at com.android.server.am.ActivityManagerService.handleApplicationCrashInner(ActivityManagerService.java:9529)
+08-25 17:45:00.840  1771  3002 V ActivityManager: 	at com.android.server.am.ActivityManagerService.handleApplicationCrash(ActivityManagerService.java:9403)
+08-25 17:45:00.840  1771  3002 V ActivityManager: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:3200)
+08-25 17:45:00.840  1771  3002 V ActivityManager: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:2914)
+08-25 17:45:00.840  1771  3002 V ActivityManager: 	at android.os.Binder.execTransactInternal(Binder.java:1346)
+08-25 17:45:00.840  1771  3002 V ActivityManager: 	at android.os.Binder.execTransact(Binder.java:1282)
+08-25 17:45:00.840  1771  3002 V ActivityManager: Removed service that is not running: ServiceRecord{e59f02e u0 com.example.demo/id.flutter.flutter_background_service.BackgroundService}
+08-25 17:45:00.840   975  1050 I libPowerHal: [setClusterFreq] miuibooster set cpufreq[0] min:2000000 max:-1 cpufreq[1] min:2500000 max:-1 
+08-25 17:45:00.841  4823  4823 I LauncherOverlayCallback: handleMessage WHAT_LAUNCHER_STATE what：3
+08-25 17:45:00.841   966   966 I vendor.mediatek.hardware.mtkpower_applist-service.mediatek: packName: com.example.demo actName: com.example.demo pid: 19322 uid: 10335 state: 3
+08-25 17:45:00.841  4823  4823 D LauncherOverlay.Window: launcherState 3
+08-25 17:45:00.841   966   966 I MTK_APPList: [notifyAPPstate] com.example.demo/com.example.demo, pid=19322, uid=10335, state:DEAD, fps:-1, win:1
+08-25 17:45:00.841   966   966 I MTK_APPList: [notifyAPPstate] multi_resumed_app_count: 5
+08-25 17:45:00.841  4823  4823 D LauncherOverlay.Window: resumedStateNow 0,resumedStateNew = 1
+08-25 17:45:00.841   966   966 I MTK_APPList: [notifyAPPstate] multi_resumed_app_info[0] com.smzdm.client.android/com.smzdm.client.android.module.search.input.SearchActivity, pid:17638, fps:120, isMultiWindow:1
+08-25 17:45:00.841   966   966 I MTK_APPList: [notifyAPPstate] multi_resumed_app_info[1] com.xiaomi.bluetooth/com.android.bluetooth.ble.app.mihome.MiuiMiHomeActivity, pid:6523, fps:-1, isMultiWindow:1
+08-25 17:45:00.841   966   966 I MTK_APPList: [notifyAPPstate] multi_resumed_app_info[2] com.tencent.mm/com.tencent.mm.plugin.appbrand.ui.AppBrandUI00, pid:1866, fps:120, isMultiWindow:1
+08-25 17:45:00.841   966   966 I MTK_APPList: [notifyAPPstate] multi_resumed_app_info[3] com.taobao.taobao/com.taobao.android.detail.alittdetail.TTDetailActivity, pid:22715, fps:-1, isMultiWindow:1
+08-25 17:45:00.841   966   966 I MTK_APPList: [notifyAPPstate] multi_resumed_app_info[4] com.example.demo/com.example.demo.MainActivity, pid:12757, fps:-1, isMultiWindow:1
+08-25 17:45:00.841   966   966 I MTK_APPList: [getForegroundAPPCount] 5
+08-25 17:45:00.841   966   966 I MTK_APPList: [notifyAPPstate] pack:com.example.demo, pid:19322, STATE_DEAD
+08-25 17:45:00.841   966   966 I MTK_APPList: [notifyNetdUID] 10335
+08-25 17:45:00.841  2380  2380 D VRI[Launcher]: vri.reportNextDraw android.view.ViewRootImpl.handleResized:2365 android.view.ViewRootImpl.-$$Nest$mhandleResized:0 android.view.ViewRootImpl$ViewRootHandler.handleMessageImpl:6901 android.view.ViewRootImpl$ViewRootHandler.handleMessage:6870 android.os.Handler.dispatchMessage:106 
+08-25 17:45:00.841  1771  3002 I mtkpower_client: [PowerHal_Wrap_notifyAppState] com.example.demo/com.example.demo pid=19322 state:3
+08-25 17:45:00.842   966   966 I MTK_APPList: [notifyPID] 19322
+08-25 17:45:00.842  2380  3034 D MiBridge: requestCpuHighFreq handle: 1
+08-25 17:45:00.842  2380  3034 D Launcher_CPUBooster: boostCpuToMax:0
+08-25 17:45:00.842   975  1050 I libPowerHal: [perfSetSysInfo] pid type:24, 19322
+08-25 17:45:00.842  1771  2143 I MiuiNetworkPolicy: removeUidState uid = 10335
+08-25 17:45:00.842  1771  3002 D WindowManager: Set transition=TransitionRecord{f72c065 id=41496 type=CLOSE flags=0x10}, ready=true, SyncId=41496 
+08-25 17:45:00.842  1771  1933 I NetworkBoostStatusManager: onUidGone uid: 10335
+08-25 17:45:00.843 24600 24631 D MyLog   : -->log(1): [Tid:167749] [KeepAliveManager] -->onProcessDied(), pid=19322, uid=10335
+08-25 17:45:00.843  1771  6000 I PowerHalWrapper: amsBoostStop AMS_BOOST_PACK_SWITCH:true, AMS_BOOST_ACT_SWITCH:false, AMS_BOOST_PROCESS_CREATE:true 
+08-25 17:45:00.843   975   982 I libPowerHal: [mtkPowerHint] hint:22, hold:500, ext:30, ext_hold:1500
+08-25 17:45:00.843  7677 27146 D UidObserver: onUidGone entry uid = 10335
+08-25 17:45:00.843   975   982 I libPowerHal: [mtkPowerHint] hint:21, hold:6000, ext:30, ext_hold:30000
+08-25 17:45:00.843  1771  1935 D DisplayModeDirectorImpl: use smart display refresh rate policy
+08-25 17:45:00.844  4823  7297 I travelService_ActivityObserverUtils: activityResumed ComponentInfo{com.miui.home/com.miui.home.launcher.Launcher}
+08-25 17:45:00.844  4823  7297 I travelService_TopActivityMonitor: user change app but last app use time not enough
+08-25 17:45:00.844   975  1050 I libPowerHal: [perfLockAcq] idx:10 hdl:1583878 hint:22 pid:975 tid:975 duration:500 lock_user:vendor.mediatek => ret_hdl:1583878
+08-25 17:45:00.844   975  1050 I libPowerHal: [setClusterFreq] MTKPOWER_HINT_PACK_SWITCH set cpufreq[0] min:2000000 max:-1 cpufreq[1] min:2500000 max:-1 
+08-25 17:45:00.844   975  1050 I libPowerHal: [perfLockRel] hdl:1583876, idx:5
+08-25 17:45:00.844  1771  2143 I MiuiNetworkPolicyTrafficLimit: updateWhiteListUidForMobileTraffic uid=10335,add=false
+08-25 17:45:00.844   975  1050 I libPowerHal: [perfLockAcq] idx:12 hdl:1583879 hint:30 pid:975 tid:975 duration:1500 lock_user:vendor.mediatek => ret_hdl:1583879
+08-25 17:45:00.844  4823  4823 D VRI[personalassistant]: vri.reportNextDraw android.view.ViewRootImpl.handleResized:2365 android.view.ViewRootImpl.-$$Nest$mhandleResized:0 android.view.ViewRootImpl$ViewRootHandler.handleMessageImpl:6901 android.view.ViewRootImpl$ViewRootHandler.handleMessage:6870 android.os.Handler.dispatchMessage:106 
+08-25 17:45:00.844   975  1050 I libPowerHal: [perfLockAcq] idx:13 hdl:1583880 hint:21 pid:975 tid:975 duration:6000 lock_user:vendor.mediatek => ret_hdl:1583880
+08-25 17:45:00.844   975  1050 I libPowerHal: [setClusterFreq] MTKPOWER_HINT_PROCESS_CREATE set cpufreq[0] min:2000000 max:-1 cpufreq[1] min:2500000 max:-1 
+08-25 17:45:00.844   975  1050 I libPowerHal: [perfLockRel] hdl:1583868, idx:4
+08-25 17:45:00.845   975  1050 I libPowerHal: [perfLockAcq] idx:14 hdl:1583881 hint:30 pid:975 tid:975 duration:30000 lock_user:vendor.mediatek => ret_hdl:1583881
+08-25 17:45:00.845   975  1050 I libPowerHal: [perfLockRel] hdl:1583880, idx:13
+08-25 17:45:00.846 24600 24631 D AppUpdateXmsfLauncher: activityResumed intent : Intent { cmp=com.miui.home/.launcher.Launcher (has extras) }
+08-25 17:45:00.846 25833 26039 D IdProviderImpl: getOAID from com.miui.analytics
+08-25 17:45:00.846  4603  6308 E TmsNfcService: defaultRouteStr :eSE
+08-25 17:45:00.846  4603  6308 D NfcService: Current SE ID from tms Stack: 1
+08-25 17:45:00.846   930  2637 E traffic : remove TrafficMobileLimiter whitelist 10335
+08-25 17:45:00.847  2380  2380 D VRI[Launcher]: vri.Setup new sync=wmsSync-VRI[Launcher]#91
+08-25 17:45:00.847 15754 18457 I VA_ActivityStateHelper: activityResumed componentName ComponentInfo{com.miui.home/com.miui.home.launcher.Launcher}
+08-25 17:45:00.847 15754 18457 I VA_ActivityStateHelper: activityResumed mAiSkillPush is false
+08-25 17:45:00.848  1771  3094 I SLM-SRV-SLSAppLib: SLM_Ai_Mode EVENT_CHECK_GMAE_AI_MODE_STATUS
+08-25 17:45:00.848  2380  2380 D VRI[Launcher]: vri.reportDrawFinished
+08-25 17:45:00.848  1771  3094 I SLM-SRV-SLSAppLib: SLM_Ai_Mode checkGameAiModeStatus mGameAiModeCloudControl:false mLinkTurboAiModeSwitch:false mGameAiModeInterfaceReady:false mGameStartBattle:false powerMgrGameUid:0
+08-25 17:45:00.848  1771  6227 W WindowManager: finishDrawingWindow: Window{9be5235 u0 com.miui.home/com.miui.home.launcher.Launcher} mDrawState=HAS_DRAWN
+08-25 17:45:00.847  5034  8550 I ProcessMonitor: onForegroundInfoChanged: ForegroundInfo{mForegroundPackageName='com.miui.home', mForegroundUid=10132, mForegroundPid=2380, mLastForegroundPackageName='com.example.demo', mLastForegroundUid=10335, mLastForegroundPid=19322, mMultiWindowForegroundPackageName='null', mMultiWindowForegroundUid=-1, mFlags=0}
+08-25 17:45:00.849  2380  2380 D RecentsImpl: mActivityStateObserver com.miui.home.launcher.Launcher
+08-25 17:45:00.848 24600 24630 D services: [XMS][observer] ActivityObserver activityResumed packageName: com.miui.home
+08-25 17:45:00.849  2380  2380 W RecentsImpl: onResumed className=com.miui.home.launcher.Launcher   mIsInAnotherPro=false   isKeyguardLocked=false   mSecuritySpaceGuideShown=false
+08-25 17:45:00.849  2380  2380 D Launcher: notifyBackGestureStatus
+08-25 17:45:00.850  2380  2894 E Launcher: notifyBackGestureStatus:run usingFsGesture=true   show=true   focus=false   pause=false
+08-25 17:45:00.850  2380  2894 D Launcher: notifyFsGestureHomeStatus    enableBackGesture=false   isSupportRecentsAndFsGesture=true
+08-25 17:45:00.848 31554 31898 D BluetoothLatencyMode: ForegroundInfo{mForegroundPackageName='com.miui.home', mForegroundUid=10132, mForegroundPid=2380, mLastForegroundPackageName='com.example.demo', mLastForegroundUid=10335, mLastForegroundPid=19322, mMultiWindowForegroundPackageName='null', mMultiWindowForegroundUid=-1, mFlags=0}
+08-25 17:45:00.850  2380  2894 W RecentsImpl: updateFsgWindowVisibilityState   isEnter=false   typeFrom=typefrom_home   isOpen=true   mIsInAnotherPro=false   mIsStatusBarExpansion=false
+08-25 17:45:00.850 31554 31898 W LeAudioService: getLeAudioService(): service is NULL
+08-25 17:45:00.850 31554 31898 D BluetoothLatencyMode: isWiredAudioHeadset.type: 1
+08-25 17:45:00.850 31554 31898 D BluetoothLatencyMode: isWiredAudioHeadset.type: 2
+08-25 17:45:00.850 31554 31898 D BluetoothLatencyMode: isWiredAudioHeadset.type: 18
+08-25 17:45:00.850  1771  2143 D MiuiNetworkPolicyTrafficLimit: updateWhiteListUidForMobileTraffic rst=true
+08-25 17:45:00.850  2751  3517 D MiuiFreeformModeObserver: activityResumed() intent： Intent { cmp=com.miui.home/.launcher.Launcher (has extras) }
+08-25 17:45:00.851  1771  2249 I NetworkBoostStatusManager: onForegroundInfoChanged uid:10132, isColdStart:false
+08-25 17:45:00.851  1771  2249 I SLM-SRV-SLAToast: foreground uid:10132, isColdStart:false, isLinkTurboEnable:false
+08-25 17:45:00.851  1771  2249 D NetworkSDKService: handleMultiAppsDualWifi isSet = false isEverOpened = false
+08-25 17:45:00.851  4823  7297 I ActivityObserverUtil: activityResumed ComponentInfo{com.miui.home/com.miui.home.launcher.Launcher}
+08-25 17:45:00.851  4823  7297 I TopActivityMonitor: send TopActivityChangeEvent=TopActivityChangeEvent(prev=ComponentInfo{com.example.demo/com.example.demo.MainActivity}, current=ComponentInfo{com.miui.home/com.miui.home.launcher.Launcher},appChanged=true)
+08-25 17:45:00.847  7677 24534 D PerfEngineController: ForegroundInfo{mForegroundPackageName='com.miui.home', mForegroundUid=10132, mForegroundPid=2380, mLastForegroundPackageName='com.example.demo', mLastForegroundUid=10335, mLastForegroundPid=19322, mMultiWindowForegroundPackageName='null', mMultiWindowForegroundUid=-1, mFlags=0}
+08-25 17:45:00.852 24002  5475 D auth    : [XMS][Auth] ActivityObserver activityResumed packageName: com.miui.home
+08-25 17:45:00.852  1771  1936 D WindowManager: Final targets: [Task{20f8a29 #1 type=home}, DefaultTaskDisplayArea@251530737]
+08-25 17:45:00.853  1026  3100 E BufferQueueDebug: [Transition Root #41496: DefaultTaskDisplayArea#466500](this:0xb40000717e079a50,id:-1,api:0,p:-1,c:-1) id info cannot be read from 'Transition Root #41496: DefaultTaskDisplayArea#466500'
+08-25 17:45:00.853 13339 17221 I ThirdAppAssistant: ThirdAppAssistantProvider ThirdAppAssistant is queried
+08-25 17:45:00.853  1026  3100 I BufferQueueDebug: [Transition Root #41496: DefaultTaskDisplayArea#466500](this:0xb40000717e079a50,id:-1,api:0,p:-1,c:-1) BufferQueue core=(1026:/system/bin/surfaceflinger)
+08-25 17:45:00.855  1771  1958 I libprocessgroup: Successfully killed process cgroup uid 10335 pid 19322 in 17ms
+08-25 17:45:00.855  4823  4823 D VRI[personalassistant]: vri.Setup new sync=wmsSync-VRI[personalassistant]#18
+08-25 17:45:00.855 29113 24291 I AICall_MemoryTrim: binder:29113_4 onAppBackground()
+08-25 17:45:00.856  5034  8550 I GameBoosterService: onForegroundInfoChanged: Cur=com.miui.home	 last=com.example.demo
+08-25 17:45:00.856  1771  1936 D WindowManager: Calling onTransitionReady info={id=41496 t=CLOSE f=0x10 trk=0 r=[0@Point(0, 0)] c=[{WCT{RemoteToken{f649528 Task{20f8a29 #1 type=home}}} m=TO_FRONT f=SHOW_WALLPAPER p=WCT{RemoteToken{835e241 DefaultTaskDisplayArea@251530737}} leash=Surface(name=Task=1#46)/@0x2a28b22 sb=Rect(0, 0 - 1220, 2712) eb=Rect(0, 0 - 1220, 2712) d=0},{WCT{RemoteToken{835e241 DefaultTaskDisplayArea@251530737}} m=TO_FRONT f=SHOW_WALLPAPER leash=Surface(name=DefaultTaskDisplayArea#9)/@0xba355c0 sb=Rect(0, 0 - 1220, 2712) eb=Rect(0, 0 - 1220, 2712) d=0}] noAni=[false] df=[false] mk=[false] nc=[0] oa=[false]}, mToken=Token{2b1971d TransitionRecord{f72c065 id=41496 type=CLOSE flags=0x10}}
+08-25 17:45:00.856  4823  4823 D VRI[personalassistant]: vri.reportDrawFinished
+08-25 17:45:00.857  1771  1936 I BLASTSyncEngine: finishNow: after onTransactionReady, mSyncId=41496
+08-25 17:45:00.857  1771  6227 I ClipboardServiceI: checkProviderWakePathForClipboard: primaryClip is null
+08-25 17:45:00.858  1771  3002 W WindowManager: finishDrawingWindow: Window{1dbb4dc u0 LauncherOverlayWindow:com.miui.personalassistant} mDrawState=HAS_DRAWN
+08-25 17:45:00.858  5034  8550 D GameBoosterService: onGameStatusChange foreground:ForegroundInfo{mForegroundPackageName='com.miui.home', mForegroundUid=10132, mForegroundPid=2380, mLastForegroundPackageName='com.example.demo', mLastForegroundUid=10335, mLastForegroundPid=19322, mMultiWindowForegroundPackageName='null', mMultiWindowForegroundUid=-1, mFlags=0}
+08-25 17:45:00.859  2751  2872 V WindowManagerShell: onTransitionReady android.os.BinderProxy@5dad4ed: {id=41496 t=CLOSE f=0x10 trk=0 r=[0@Point(0, 0)] c=[{WCT{android.window.IWindowContainerToken$Stub$Proxy@500c20f} m=TO_FRONT f=SHOW_WALLPAPER p=WCT{android.window.IWindowContainerToken$Stub$Proxy@30d629c} leash=Surface(name=Task=1#46)/@0x6d3bf70 sb=Rect(0, 0 - 1220, 2712) eb=Rect(0, 0 - 1220, 2712) d=0},{WCT{android.window.IWindowContainerToken$Stub$Proxy@166b4a5} m=TO_FRONT f=SHOW_WALLPAPER leash=Surface(name=DefaultTaskDisplayArea#9)/@0xd1cd2e9 sb=Rect(0, 0 - 1220, 2712) eb=Rect(0, 0 - 1220, 2712) d=0}] noAni=[false] df=[false] mk=[false] nc=[0] oa=[false]}
+08-25 17:45:00.859  2751  2872 V WindowManagerShell: onTransitionReady startT:7606390255740, finishT:7606390255741
+08-25 17:45:00.859  2751  2872 D MiuiFreeFormManager:  isHideStackFromFullScreen taskId=1
+08-25 17:45:00.859  2751  2872 V WindowManagerShell: Transition (#41496)android.os.BinderProxy@5dad4ed@0 ready while (#41495)android.os.BinderProxy@952163c@0 is still animating. Notify the animating transition in case they can be merged
+08-25 17:45:00.860  2751  2872 V WindowManagerShell:    Merge into remote: RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@1adf04b, appThread = null, debugName = null, hyperRemoteTransition = null }
+08-25 17:45:00.861  5034  8550 I VideoBoxUtils: isSupportVideoBox: false
+08-25 17:45:00.862  7708  7727 I GST     : forePkg: com.miui.home, preForePkg: com.example.demo
+08-25 17:45:00.863  2380 25469 D AppObserver: ForegroundInfo{mForegroundPackageName='com.miui.home', mForegroundUid=10132, mForegroundPid=2380, mLastForegroundPackageName='com.example.demo', mLastForegroundUid=10335, mLastForegroundPid=19322, mMultiWindowForegroundPackageName='null', mMultiWindowForegroundUid=-1, mFlags=0}
+08-25 17:45:00.863   944  1461 I android.hardware.graphics.composer@3.2-service: Sensor: notify citsensorservice to trigger cwb
+08-25 17:45:00.864  1771  1904 V WindowManager: Sent Transition #41496 createdAt=08-25 17:45:00.821 via request=TransitionRequestInfo { type = CLOSE, triggerTask = null, remoteTransition = null, displayChange = null }
+08-25 17:45:00.864  1404  2105 I libsensor-displayalgo: mframeBufferManager request
+08-25 17:45:00.864  1771  1904 V WindowManager:     startWCT=WindowContainerTransaction { changes = {} hops = [] errorCallbackToken=null taskFragmentOrganizer=null }
+08-25 17:45:00.864  1404  2108 I libsensor-frameBufferManager: request dump start
+08-25 17:45:00.864  1404  2108 D libcomposer_ext: ClientImplAidl::getDispDumpEnable()
+08-25 17:45:00.864  1771  1904 V WindowManager:     info={id=41496 t=CLOSE f=0x10 trk=0 r=[0@Point(0, 0)] c=[{WCT{RemoteToken{f649528 Task{20f8a29 #1 type=home}}} m=TO_FRONT f=SHOW_WALLPAPER p=WCT{RemoteToken{835e241 DefaultTaskDisplayArea@251530737}} leash=Surface(name=Task=1#46)/@0x2a28b22 sb=Rect(0, 0 - 1220, 2712) eb=Rect(0, 0 - 1220, 2712) d=0},{WCT{RemoteToken{835e241 DefaultTaskDisplayArea@251530737}} m=TO_FRONT f=SHOW_WALLPAPER leash=Surface(name=DefaultTaskDisplayArea#9)/@0xba355c0 sb=Rect(0, 0 - 1220, 2712) eb=Rect(0, 0 - 1220, 2712) d=0}] noAni=[false] df=[false] mk=[false] nc=[0] oa=[false]}
+08-25 17:45:00.864  2380 25494 I RemoteAnimationAdapterCompat: HomeShellTransition IRemoteTransition mergeAnimation
+08-25 17:45:00.864   944  4465 D libcomposer_ext: DeviceImplAidl::syncPerform(13), client_handle: 1
+08-25 17:45:00.864   944  4465 E libcomposer_ext: DeviceImplAidl::DeviceClientContextAidl::ParseGetDispDumpEnable()
+08-25 17:45:00.864   944  4465 I hwcomposer: [HWC] getDispDumpEnable(), dpy 1, enable 1, (0,0,160,130), (160, 130), 3  
+08-25 17:45:00.864   944  4465 I hwcomposer: [DRMDEV] isSupportWbParams(), id_crtc 113, id_connector 32, dump_point 0, src(160, 130), dst(160, 130), config 0  
+08-25 17:45:00.864   944  4465 E hwcomposer: [DRMDEV] isSupportWbParams(), disp(1220, 2712)  
+08-25 17:45:00.864  7677  7899 D PowerKeeper.Audio: pids 0
+08-25 17:45:00.864   944  4465 I hwcomposer: [DISP_DUMP] setEnable(), dpy(0), enable 1, src(0, 0, 160, 130), dst(160, 130), fmt 0x3  
+08-25 17:45:00.864  2380 25494 D RemoteAnimationAdapterCompat: printLeash::TransitionInfo = {id=41496 t=CLOSE f=0x10 trk=0 r=[0@Point(0, 0)] c=[{WCT{android.window.IWindowContainerToken$Stub$Proxy@22b3b83} m=TO_FRONT f=SHOW_WALLPAPER p=WCT{android.window.IWindowContainerToken$Stub$Proxy@2dc7100} leash=Surface(name=Task=1#46)/@0x84a4d39 sb=Rect(0, 0 - 1220, 2712) eb=Rect(0, 0 - 1220, 2712) d=0},{WCT{android.window.IWindowContainerToken$Stub$Proxy@e406f7e} m=TO_FRONT f=SHOW_WALLPAPER leash=Surface(name=DefaultTaskDisplayArea#9)/@0xcdc0cdf sb=Rect(0, 0 - 1220, 2712) eb=Rect(0, 0 - 1220, 2712) d=0}] noAni=[false] df=[false] mk=[false] nc=[0] oa=[false]}
+08-25 17:45:00.864  2380 25494 D RemoteAnimationAdapterCompat: printLeash::index = 0, change = {WCT{android.window.IWindowContainerToken$Stub$Proxy@22b3b83} m=TO_FRONT f=SHOW_WALLPAPER p=WCT{android.window.IWindowContainerToken$Stub$Proxy@2dc7100} leash=Surface(name=Task=1#46)/@0x84a4d39 sb=Rect(0, 0 - 1220, 2712) eb=Rect(0, 0 - 1220, 2712) d=0}
+08-25 17:45:00.864  1404  2108 E libsensor-frameBufferManager: frameBufferManager_sensor_debug : first_time getDispDump Enable ret = 0
+08-25 17:45:00.864  1404  2108 D libcomposer_ext: ClientImplAidl::getDispDump(), dpy 1, dst (160, 130), dump_point 1, release_fence -1
+08-25 17:45:00.864  2380  2894 W RecentsModel: getRunningTask   taskInfo=TaskInfo{userId=0 taskId=2 displayId=0 isRunning=true baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10000100 cmp=com.miui.home/.launcher.Launcher } baseActivity=ComponentInfo{com.miui.home/com.miui.home.launcher.Launcher} topActivity=ComponentInfo{com.miui.home/com.miui.home.launcher.Launcher} origActivity=null realActivity=ComponentInfo{com.miui.home/com.miui.home.launcher.Launcher} numActivities=1 lastActiveTime=2339808175 supportsSplitScreenMultiWindow=true supportsMultiWindow=true resizeMode=2 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=200 token=WCT{android.window.IWindowContainerToken$Stub$Proxy@cf983f5} topActivityType=2 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=null topActivityInfo=ActivityInfo{f0058a com.miui.home.launcher.Launcher} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=true isVisibleRequested=true isSleeping=false topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= false topActivityLetterboxed= false isFromDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 locusId=null displayAreaFeatureId=1 cameraCompatControlState=hidden mIsCastMode=false mTopActivityMediaSize=null mTopActivityRecordName=ActivityRecord{382c2a1 u0 com.miui.home/.launcher.Launcher t2} mTopActivityOrientation=1 mTopActivityWindowIsNowVisible=false isTranslucent=false isEmbedded=false shouldBeVisible=true isImmersive=false mBehindAppLockPkg=null mOriginatingUid=0}
+08-25 17:45:00.864 21238 21261 I htmlviewercloudcontrol: isStagingEnv:false param =  taa_SwitchStatus  uriMatch = 2, cluster: cn, version: 582670, traceId: 6f2379f106870f670bf62834b0d4d0ee, regId: Hl0Pgoa7ZHevxyNm8hAYXAR7lHf7qqiPOCBNwBliblfcrP6DbOicg0yqTrPo5vxs
+08-25 17:45:00.864  2380  2894 W RecentsModel: getTaskInfoIgnoreFreeform   taskInfo=ComponentInfo{com.miui.home/com.miui.home.launcher.Launcher}
+08-25 17:45:00.864  2380 25494 D RemoteAnimationAdapterCompat: printLeash::taskInfo = TaskInfo{userId=0 taskId=1 displayId=0 isRunning=true baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10000100 cmp=com.miui.home/.launcher.Launcher } baseActivity=ComponentInfo{com.miui.home/com.miui.home.launcher.Launcher} topActivity=ComponentInfo{com.miui.home/com.miui.home.launcher.Launcher} origActivity=null realActivity=null numActivities=1 lastActiveTime=53502 supportsSplitScreenMultiWindow=true supportsMultiWindow=true resizeMode=2 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=200 token=WCT{android.window.IWindowContainerToken$Stub$Proxy@9179d2c} topActivityType=2 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=null topActivityInfo=ActivityInfo{a9e97fb com.miui.home.launcher.Launcher} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=true isVisibleRequested=true isSleeping=false topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= false topActivityLetterboxed= false isFromDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 locusId=null displayAreaFeatureId=1 cameraCompatControlState=hidden mIsCastMode=false mTopActivityMediaSize=null mTopActivityRecordName=ActivityRecord{382c2a1 u0 com.miui.home/.launcher.Launcher t2} mTopActivityOrientation=1 mTopActivityWindowIsNowVisible=true isTranslucent=false isEmbedded=false shouldBeVisible=true isImmersive=false mBehindAppLockPkg=null mOriginatingUid=0}
+08-25 17:45:00.864  2380  2894 W RecentsImpl: getTopActivity from AMS.   cn=ComponentInfo{com.miui.home/com.miui.home.launcher.Launcher}
+08-25 17:45:00.865  2380 25494 D RemoteAnimationAdapterCompat: printLeash::index = 1, change = {WCT{android.window.IWindowContainerToken$Stub$Proxy@e406f7e} m=TO_FRONT f=SHOW_WALLPAPER leash=Surface(name=DefaultTaskDisplayArea#9)/@0xcdc0cdf sb=Rect(0, 0 - 1220, 2712) eb=Rect(0, 0 - 1220, 2712) d=0}
+08-25 17:45:00.865  5034  8550 I VideoToolBoxService: vtb is closed!!!
+08-25 17:45:00.865   944  4465 D libcomposer_ext: DeviceImplAidl::syncPerform(14), client_handle: 1
+08-25 17:45:00.865   944  4465 D libcomposer_ext: DeviceImplAidl::DeviceClientContextAidl::ParseGetDispDump()
+08-25 17:45:00.865  2380  2380 D RecentsImpl: showNavStubView
+08-25 17:45:00.865   944  4465 D libcomposer_ext: DeviceImplAidl::ParseGetDispDump(), dpy 1, dst (160, 130), dump_point 1
+08-25 17:45:00.865  2380  2986 D RecentsImpl: hideBackStubWindow
+08-25 17:45:00.865  2380  2380 D NavStubView_Touch: setKeepHidden    old=false   new=false
+08-25 17:45:00.865  2380 25494 E RemoteAnimationAdapterCompat: printLeash::index = 0, root = {WCT{android.window.IWindowContainerToken$Stub$Proxy@22b3b83} m=TO_FRONT f=SHOW_WALLPAPER p=WCT{android.window.IWindowContainerToken$Stub$Proxy@2dc7100} leash=Surface(name=Task=1#46)/@0x84a4d39 sb=Rect(0, 0 - 1220, 2712) eb=Rect(0, 0 - 1220, 2712) d=0}
+08-25 17:45:00.865  2380 25494 D Launcher.Boost: setDynamicVIPTaskIfNeeded::duration = 150
+08-25 17:45:00.865   944  4465 I hwcomposer: [HWC] getDispDump(), dpy 1, (795,3,955,133), (160, 130), (1, 2), (-1), (-1), (0xb40000712e21c7c0)  
+08-25 17:45:00.865   944  4465 I hwcomposer: [DRMDEV] isSupportWbParams(), id_crtc 113, id_connector 32, dump_point 1, src(160, 130), dst(160, 130), config 0  
+08-25 17:45:00.865   944  4465 E hwcomposer: [DRMDEV] isSupportWbParams(), disp(1220, 2712)  
+08-25 17:45:00.865   944  4465 I hwcomposer: [DISP_DUMP] setDumpBuf(), dpy(0), src(795, 3, 955, 133), dst(160, 130), (1, 2), -1, (-1), (0xb40000712e21c7c0)  
+08-25 17:45:00.865   944  4465 I hwcomposer: [HWC] (0)fire a callback of refresh to SF[9]  
+08-25 17:45:00.866  1771  1935 D DisplayModeDirectorImpl: use smart display refresh rate policy
+08-25 17:45:00.867  2380 25494 I ConnectAnimFinishCallbackManager: mNeedShowLauncher = false
+08-25 17:45:00.867  2380 25494 I ConnectAnimFinishCallbackManager: get is waitFinishMainAnim = false
+08-25 17:45:00.867  5034 21584 D z1      : myUserId = 0	currentUserId0
+08-25 17:45:00.867  2751 10437 I RecentsTransitionHandler: getRecentsAnimationController fail, controllerIdx = -1
+08-25 17:45:00.867  2380 25494 I RemoteAnimationAdapterCompat: getIRecentsAnimationController = null
+08-25 17:45:00.867  2380 25494 I RemoteAnimationAdapterCompat: 0, check isClosingType type = 2, mode = 3, taskId = 1, changes leash = Surface(name=Task=1#46)/@0x84a4d39, change = {WCT{android.window.IWindowContainerToken$Stub$Proxy@22b3b83} m=TO_FRONT f=SHOW_WALLPAPER p=WCT{android.window.IWindowContainerToken$Stub$Proxy@2dc7100} leash=Surface(name=Task=1#46)/@0x84a4d39 sb=Rect(0, 0 - 1220, 2712) eb=Rect(0, 0 - 1220, 2712) d=0}
+08-25 17:45:00.867  2380 25494 I RemoteAnimationAdapterCompat: has home
+08-25 17:45:00.867  2380 25494 E RemoteAnimationAdapterCompat: i = 1, changes leash = Surface(name=DefaultTaskDisplayArea#9)/@0xcdc0cdf, change = {WCT{android.window.IWindowContainerToken$Stub$Proxy@e406f7e} m=TO_FRONT f=SHOW_WALLPAPER leash=Surface(name=DefaultTaskDisplayArea#9)/@0xcdc0cdf sb=Rect(0, 0 - 1220, 2712) eb=Rect(0, 0 - 1220, 2712) d=0}, taskInfo == null
+08-25 17:45:00.867  2380 25494 I RemoteAnimationAdapterCompat: home mode TO_FRONT, isOtherCase true 
+08-25 17:45:00.867  2380 25494 I RemoteAnimationAdapterCompat: cancelAnimAndFinishMain for split or no home or otherCase
+08-25 17:45:00.867  2380 25494 I RemoteAnimationAdapterCompat: no home or other case, finish main anim, merge anim to main anim
+08-25 17:45:00.868  2380 25494 E ConnectAnimFinishCallbackManager: call executeFinishCallback, toHome = true
+08-25 17:45:00.868  2380 25494 E ConnectAnimFinishCallbackManager: java.lang.Exception
+08-25 17:45:00.868  2380 25494 E ConnectAnimFinishCallbackManager: 	at com.android.systemui.shared.recents.utilities.RemoteAnimationFinishCallbackManager.executeFinishCallback(RemoteAnimationFinishCallbackManager.java:160)
+08-25 17:45:00.868  2380 25494 E ConnectAnimFinishCallbackManager: 	at com.android.systemui.shared.recents.utilities.RemoteAnimationFinishCallbackManager.executeFinishCallback(RemoteAnimationFinishCallbackManager.java:143)
+08-25 17:45:00.868  2380 25494 E ConnectAnimFinishCallbackManager: 	at com.android.systemui.shared.recents.system.RemoteAnimationAdapterCompat$2.cancelAnimAndFinishMain(RemoteAnimationAdapterCompat.java:598)
+08-25 17:45:00.868  2380 25494 E ConnectAnimFinishCallbackManager: 	at com.android.systemui.shared.recents.system.RemoteAnimationAdapterCompat$2.mergeAnimation(RemoteAnimationAdapterCompat.java:516)
+08-25 17:45:00.868  2380 25494 E ConnectAnimFinishCallbackManager: 	at android.window.IRemoteTransition$Stub.onTransact(IRemoteTransition.java:147)
+08-25 17:45:00.868  2380 25494 E ConnectAnimFinishCallbackManager: 	at android.os.Binder.execTransactInternal(Binder.java:1351)
+08-25 17:45:00.868  2380 25494 E ConnectAnimFinishCallbackManager: 	at android.os.Binder.execTransact(Binder.java:1282)
+08-25 17:45:00.868  2380 25494 I ConnectAnimFinishCallbackManager: mFinishedCallback is null
+08-25 17:45:00.868  2380 25494 I ConnectAnimFinishCallbackManager: mNeedShowLauncher = false
+08-25 17:45:00.868  2380 25494 I ConnectAnimFinishCallbackManager: call finishMainCallback, wct = null, sct = android.view.SurfaceControl$Transaction@92b6a71, callback = android.window.IRemoteTransitionFinishedCallback$Stub$Proxy@9b143e4, mCounterRotatorList.size = 0, mInfoExposeList.size = 1, token = android.os.BinderProxy@427d976
+08-25 17:45:00.868  7708  7727 D VENUS_GAMEAI_START_GameAiStartManager: 高能时刻未安装
+08-25 17:45:00.868  2380 25494 I ConnectAnimFinishCallbackManager: call onTransitionFinishedWithCallback end
+08-25 17:45:00.868  2380 25494 I ConnectAnimFinishCallbackManager: execute finishMainCallbackSync return, no need post delay
+08-25 17:45:00.868  2380 25494 D QuickstepAppTransitionManagerImpl: run stop running anim runnable
+08-25 17:45:00.868  2380  2380 I RectFSpringAnim: endDirectly mRequestEnd end
+08-25 17:45:00.868  2380  2380 I RectFSpringAnim: java.lang.Exception
+08-25 17:45:00.868  2380  2380 I RectFSpringAnim: 	at com.miui.home.recents.util.RectFSpringAnim.endDirectly(RectFSpringAnim.java:884)
+08-25 17:45:00.868  2380  2380 I RectFSpringAnim: 	at com.miui.home.recents.util.RectFSpringAnim.lambda$rkMu9d_b7IMRELtBYgSbVVi6Iqk(Unknown Source:0)
+08-25 17:45:00.868  2380  2380 I RectFSpringAnim: 	at com.miui.home.recents.util.-$$Lambda$RectFSpringAnim$rkMu9d_b7IMRELtBYgSbVVi6Iqk.run(Unknown Source:2)
+08-25 17:45:00.868  2380  2380 I RectFSpringAnim: 	at android.os.Handler.handleCallback(Handler.java:958)
+08-25 17:45:00.868  2380  2380 I RectFSpringAnim: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+08-25 17:45:00.868  2380  2380 I RectFSpringAnim: 	at android.os.Looper.loopOnce(Looper.java:222)
+08-25 17:45:00.868  2380  2380 I RectFSpringAnim: 	at android.os.Looper.loop(Looper.java:314)
+08-25 17:45:00.868  2380  2380 I RectFSpringAnim: 	at android.app.ActivityThread.main(ActivityThread.java:8816)
+08-25 17:45:00.868  2380  2380 I RectFSpringAnim: 	at java.lang.reflect.Method.invoke(Native Method)
+08-25 17:45:00.868  2380  2380 I RectFSpringAnim: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:569)
+08-25 17:45:00.868  2380  2380 I RectFSpringAnim: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1090)
+08-25 17:45:00.869  2380  2380 I QuickstepAppTransitionManagerImpl: AnimOpen, home onAnimationCancel
+08-25 17:45:00.869  2380  2380 I QuickstepAppTransitionManagerImpl: java.lang.Exception
+08-25 17:45:00.869  2380  2380 I QuickstepAppTransitionManagerImpl: 	at com.miui.home.recents.QuickstepAppTransitionManagerImpl$2.onAnimationCancel(QuickstepAppTransitionManagerImpl.java:836)
+08-25 17:45:00.869  2380  2380 I QuickstepAppTransitionManagerImpl: 	at com.miui.home.recents.util.RectFSpringAnim.cancelDirectly(RectFSpringAnim.java:1019)
+08-25 17:45:00.869  2380  2380 I QuickstepAppTransitionManagerImpl: 	at com.miui.home.recents.util.-$$Lambda$iEzCU77Nm4Mme3cfZb4_7S16aIc.run(Unknown Source:2)
+08-25 17:45:00.869  2380  2380 I QuickstepAppTransitionManagerImpl: 	at android.os.Handler.handleCallback(Handler.java:958)
+08-25 17:45:00.869  2380  2380 I QuickstepAppTransitionManagerImpl: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+08-25 17:45:00.869  2380  2380 I QuickstepAppTransitionManagerImpl: 	at android.os.Looper.loopOnce(Looper.java:222)
+08-25 17:45:00.869  2380  2380 I QuickstepAppTransitionManagerImpl: 	at android.os.Looper.loop(Looper.java:314)
+08-25 17:45:00.869  2380  2380 I QuickstepAppTransitionManagerImpl: 	at android.app.ActivityThread.main(ActivityThread.java:8816)
+08-25 17:45:00.869  2380  2380 I QuickstepAppTransitionManagerImpl: 	at java.lang.reflect.Method.invoke(Native Method)
+08-25 17:45:00.869  2380  2380 I QuickstepAppTransitionManagerImpl: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:569)
+08-25 17:45:00.869  2380  2380 I QuickstepAppTransitionManagerImpl: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1090)
+08-25 17:45:00.869  2380  2380 D QuickstepAppTransitionManagerImpl: onAnimationEnd set ForGC false
+08-25 17:45:00.869  2380  2380 E Launcher.Boost: setDynamicVIPContextForGC: mIsTurboSchedDisabled :false   isBoost=false   mIsDynamicVIPContextForGCDisabled=false
+08-25 17:45:00.869  2380  2380 E Launcher.Boost: setDynamicVIPContextForGC: success isBoostContext:false
+08-25 17:45:00.869  2380  2380 D LauncherSoscController: Shell transition animation end, run: null
+08-25 17:45:00.869  2380  2380 I LauncherAppTransitionManager: setIsOpenAnimRunning = false
+08-25 17:45:00.869  2380  2380 I QuickstepAppTransitionManagerImpl: AnimOpen, home onAnimationEnd
+08-25 17:45:00.869  5034  8550 D AppPredictManager: ForegroundAppChange: com.miui.home, ignore !
+08-25 17:45:00.869  5034  8550 I AppPredictService: difTIme = 507
+08-25 17:45:00.869  2751  2872 D SoScUtils: monitorTransitionFinished transition:android.os.BinderProxy@952163c transaction: android.view.SurfaceControl$Transaction@a11702b mRequestCloseTransition:null mRequestOpenTransition:null mPairsOpenTransition:null mPairsOpenTransitionNull:null mRequestOpenTriggerTask:-1 mRequestCloseTriggerTask:-1 mOrientationTransition: null mMainStartingTask:-1 mSideStartingTask:-1
+08-25 17:45:00.869  2751  2872 V WindowManagerShell: Transition animation finished (aborted=false), notifying core (#41495)android.os.BinderProxy@952163c@0
+08-25 17:45:00.869  5034  7499 E SuggestManager: openApp name = com.miui.home
+08-25 17:45:00.869  5034  7499 I NewAutoTaskManager: app use - delay = 9223372036854775807, doRemove = false, doPost = false
+08-25 17:45:00.870   944  4465 D libcomposer_ext: DeviceImplAidl::DeviceClientContextAidl::NotifyDispDumpReady()
+08-25 17:45:00.870  1771  2264 I DisplayModeDirectorImpl: SmartDisplayPolicyEnd
+08-25 17:45:00.870  2380  2380 I RectFSpringAnim: MultiSpringDynamicAnimation on end
+08-25 17:45:00.870  2380  2380 D QuickstepAppTransitionManagerImpl: onAnimationEnd set ForGC false
+08-25 17:45:00.870  2380  2380 E Launcher.Boost: setDynamicVIPContextForGC: mIsTurboSchedDisabled :false   isBoost=false   mIsDynamicVIPContextForGCDisabled=false
+08-25 17:45:00.870  2380  2380 E Launcher.Boost: setDynamicVIPContextForGC: success isBoostContext:false
+08-25 17:45:00.870  2380  2380 D LauncherSoscController: Shell transition animation end, run: null
+08-25 17:45:00.871  2380  2380 I QuickstepAppTransitionManagerImpl: AnimOpen, home onAnimationEnd mIsOpenAnimRunning return
+08-25 17:45:00.871  2380  2380 I ActivityOptionsCompat: before execute token = android.os.BinderProxy@427d976
+08-25 17:45:00.871  1404  2105 D libcomposer_ext: ClientCallbackAidl::asyncPerform(15)
+08-25 17:45:00.871  2380  2380 E LauncherAnimationRunner: finish: mFinishRunnable.run
+08-25 17:45:00.871  1404  2105 D libcomposer_ext: ClientImplAidl::ParseNotifyDispDumpReady()
+08-25 17:45:00.872  1771  1904 V WindowManager: Finish Transition #41495: created at 08-25 17:45:00.311 collect-started=0.039ms request-sent=21.752ms started=25.145ms ready=25.127ms sent=50.142ms finished=558.848ms
+08-25 17:45:00.873  2751  2872 V WindowManagerShell: Playing animation for (#41496)android.os.BinderProxy@5dad4ed@0
+08-25 17:45:00.873 21238 21261 I htmlviewercloudcontrol: isStagingEnv:false param =  taa_SwitchStatus  uriMatch = 2, cluster: cn, version: 582670, traceId: 6f2379f106870f670bf62834b0d4d0ee, regId: Hl0Pgoa7ZHevxyNm8hAYXAR7lHf7qqiPOCBNwBliblfcrP6DbOicg0yqTrPo5vxs
+08-25 17:45:00.873  2751  2872 V WindowManagerShell:  try handler com.android.wm.shell.transition.SoScMixedHandler@440f538
+08-25 17:45:00.873  2751  2872 V WindowManagerShell:  try handler com.android.wm.shell.keyguard.KeyguardTransitionHandler@bafa911
+08-25 17:45:00.873  2751  2872 V WindowManagerShell:  try handler com.android.wm.shell.activityembedding.ActivityEmbeddingController@3745a76
+08-25 17:45:00.873  2751  2872 V WindowManagerShell:  try handler com.android.wm.shell.recents.RecentsTransitionHandler@95ea877
+08-25 17:45:00.873  2751  2872 V ShellRecents: RecentsTransitionHandler.startAnimation: no controller found
+08-25 17:45:00.873  2751  2872 V WindowManagerShell:  try handler com.android.wm.shell.miuidesktopmode.MiuiDesktopModeAnimation@7ac2ce4
+08-25 17:45:00.873  2751  2872 V WindowManagerShell:  try handler com.android.wm.shell.miuifreeform.MiuiFreeformModeAnimation@654c54d
+08-25 17:45:00.873  2751  2872 D MiuiFreeformAnimation: startAnimation change: {WCT{android.window.IWindowContainerToken$Stub$Proxy@500c20f} m=TO_FRONT f=SHOW_WALLPAPER p=WCT{android.window.IWindowContainerToken$Stub$Proxy@30d629c} leash=Surface(name=Task=1#46)/@0x6d3bf70 sb=Rect(0, 0 - 1220, 2712) eb=Rect(0, 0 - 1220, 2712) d=0} info.getType(): 2
+08-25 17:45:00.873  2751  2872 I MiuiFreeformAnimation: isLaunchWidgetPicker=false,taskInfo.getWindowingMode()=1, taskInfo.getActivityType()=2
+08-25 17:45:00.873  5034  8550 I BeautyService: onForegroundInfoChanged: Cur=com.miui.home	 last=com.example.demo
+08-25 17:45:00.873  2751  2872 D MiuiFreeformAnimation: startAnimation change: {WCT{android.window.IWindowContainerToken$Stub$Proxy@166b4a5} m=TO_FRONT f=SHOW_WALLPAPER leash=Surface(name=DefaultTaskDisplayArea#9)/@0xd1cd2e9 sb=Rect(0, 0 - 1220, 2712) eb=Rect(0, 0 - 1220, 2712) d=0} info.getType(): 2
+08-25 17:45:00.873  2751  2872 V WindowManagerShell:  try handler com.android.wm.shell.miuimultiwinswitch.miuiwindowdecor.MiuiTaskTransitionHandler@cc3a802
+08-25 17:45:00.873  2751  2872 W MiuiTaskTransitionHandler: Receive an unknown transition, token=android.os.BinderProxy@5dad4ed, type=2
+08-25 17:45:00.873  2751  2872 V WindowManagerShell:  try handler com.android.wm.shell.pip.PipTransition@b5513
+08-25 17:45:00.873  2751  2872 V WindowManagerShell:  try handler com.android.wm.shell.sosc.SoScStageCoordinator@8713350
+08-25 17:45:00.873  2751  2872 V WindowManagerShell:  try handler com.android.wm.shell.splitscreen.StageCoordinator@5b56949
+08-25 17:45:00.873  2751  2872 V WindowManagerShell:  try handler com.android.wm.shell.transition.RemoteTransitionHandler@bc8424e
+08-25 17:45:00.873  2751  2872 V WindowManagerShell: Transition doesn't have explicit remote, search filters for match for {id=41496 t=CLOSE f=0x10 trk=0 r=[0@Point(0, 0)] c=[{WCT{android.window.IWindowContainerToken$Stub$Proxy@500c20f} m=TO_FRONT f=SHOW_WALLPAPER p=WCT{android.window.IWindowContainerToken$Stub$Proxy@30d629c} leash=Surface(name=Task=1#46)/@0x6d3bf70 sb=Rect(0, 0 - 1220, 2712) eb=Rect(0, 0 - 1220, 2712) d=0},{WCT{android.window.IWindowContainerToken$Stub$Proxy@166b4a5} m=TO_FRONT f=SHOW_WALLPAPER leash=Surface(name=DefaultTaskDisplayArea#9)/@0xd1cd2e9 sb=Rect(0, 0 - 1220, 2712) eb=Rect(0, 0 - 1220, 2712) d=0}] noAni=[false] df=[false] mk=[false] nc=[0] oa=[false]}
+08-25 17:45:00.873  2751  2872 V WindowManagerShell:  Checking filter Pair{{types=[] flags=0x0] notFlags=0x100 checks=[{NOT atype=undefined independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=ANY topActivity=null},{atype=standard independent=false modes=[CLOSE,TO_BACK] flags=FLAG_TRANSIT_IN_SOSC mustBeTask=false order=TOP topActivity=null}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@e345f8d, appThread = null, debugName = null, hyperRemoteTransition = null }}
+08-25 17:45:00.873  2751  2872 V WindowManagerShell:  Checking filter Pair{{types=[] flags=0x0] notFlags=0x100 checks=[{atype=home independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=ANY topActivity=ComponentInfo{com.miui.home/com.miui.home.launcher.Launcher}},{atype=standard independent=false modes=[CLOSE,TO_BACK] flags=FLAG_TRANSIT_IN_SOSC mustBeTask=false order=ANY topActivity=null}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@577d542, appThread = null, debugName = null, hyperRemoteTransition = null }}
+08-25 17:45:00.873  2751  2872 V WindowManagerShell:  Checking filter Pair{{types=[] flags=0x0] notFlags=0x100 checks=[{atype=home independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=TOP topActivity=ComponentInfo{com.miui.home/com.miui.home.launcher.Launcher}},{atype=standard independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@a0c1953, appThread = null, debugName = null, hyperRemoteTransition = null }}
+08-25 17:45:00.873  2751  2872 V WindowManagerShell:  Delegate animation for #41496 to null
+08-25 17:45:00.873  2751  2872 V WindowManagerShell:  try handler com.android.wm.shell.transition.DefaultTransitionHandler@ecc2f6f
+08-25 17:45:00.873  2751  2872 V WindowManagerShell: start default transition animation, info = {id=41496 t=CLOSE f=0x10 trk=0 r=[0@Point(0, 0)] c=[{WCT{android.window.IWindowContainerToken$Stub$Proxy@500c20f} m=TO_FRONT f=SHOW_WALLPAPER p=WCT{android.window.IWindowContainerToken$Stub$Proxy@30d629c} leash=Surface(name=Task=1#46)/@0x6d3bf70 sb=Rect(0, 0 - 1220, 2712) eb=Rect(0, 0 - 1220, 2712) d=0},{WCT{android.window.IWindowContainerToken$Stub$Proxy@166b4a5} m=TO_FRONT f=SHOW_WALLPAPER leash=Surface(name=DefaultTaskDisplayArea#9)/@0xd1cd2e9 sb=Rect(0, 0 - 1220, 2712) eb=Rect(0, 0 - 1220, 2712) d=0}] noAni=[false] df=[false] mk=[false] nc=[0] oa=[false]}
+08-25 17:45:00.873  2751  2872 D TransitionAnimationHelper:  load default animation  type = 2 enter = true animAttr = 16 isTask = false translucent = false
+08-25 17:45:00.873  2751  2872 V WindowManagerShell: loadAnimation: anim=null animAttr=0x10 type=CLOSE isEntrance=true
+08-25 17:45:00.873  2751  2872 D DefaultTransitionImpl: shouldApplyAnimationTogether mProvisioned = true info.getType() = 2 shouldApplyAnimationTogether = false
+08-25 17:45:00.874  2380 25494 D ConnectAnimFinishCallbackManager: Transitions all anim call WindowOrganizer.finishTransition end
+08-25 17:45:00.874  2380 25494 I ConnectAnimFinishCallbackManager: checkCallbackSync, size = 0
+08-25 17:45:00.875  2751  2872 D SoScUtils: monitorTransitionFinished transition:android.os.BinderProxy@5dad4ed transaction: android.view.SurfaceControl$Transaction@5dc0c88 mRequestCloseTransition:null mRequestOpenTransition:null mPairsOpenTransition:null mPairsOpenTransitionNull:null mRequestOpenTriggerTask:-1 mRequestCloseTriggerTask:-1 mOrientationTransition: null mMainStartingTask:-1 mSideStartingTask:-1
+08-25 17:45:00.875  2751  2872 V WindowManagerShell: Transition animation finished (aborted=false), notifying core (#41496)android.os.BinderProxy@5dad4ed@0
+08-25 17:45:00.875  2751  2886 D ShellTransitions: speed ui!!!!!!!!!!!
+08-25 17:45:00.876 25833 26039 D IdProviderImpl: getOAID from com.miui.analytics
+08-25 17:45:00.876  1771  2264 I DisplayModeDirectorImpl: SmartDisplayPolicyEnd
+08-25 17:45:00.876  1771  1904 V WindowManager: Finish Transition #41496: created at 08-25 17:45:00.821 collect-started=0.053ms request-sent=0.121ms started=10.721ms ready=10.702ms sent=35.537ms finished=55.314ms
+08-25 17:45:00.877  2380  2380 E RotationHelper: setCurrentTransitionRequest: request=0
+08-25 17:45:00.877 21238 21261 I htmlviewercloudcontrol: isStagingEnv:false param =  taa_SwitchStatus  uriMatch = 2, cluster: cn, version: 582670, traceId: 6f2379f106870f670bf62834b0d4d0ee, regId: Hl0Pgoa7ZHevxyNm8hAYXAR7lHf7qqiPOCBNwBliblfcrP6DbOicg0yqTrPo5vxs
+08-25 17:45:00.877  1771  6000 D WindowManager: Starting window removed Window{1264e9 u0 Splash Screen com.example.demo}
+08-25 17:45:00.878  1771  6000 W InputManager-JNI: Input channel object '1264e9 Splash Screen com.example.demo (client)' was disposed without first being removed with the input manager!
+08-25 17:45:00.878  1771  6000 D WindowManager: setParent old=ActivityRecord{ff1f758 u0 com.example.demo/.MainActivity t6484 f}},new=null,this window=Window{1264e9 u0 Splash Screen com.example.demo},callers=com.android.server.wm.WindowContainer.removeChild:840 com.android.server.wm.ActivityRecord.removeChild:5301 com.android.server.wm.ActivityRecord.removeChild:470 com.android.server.wm.WindowContainer.removeImmediately:898 com.android.server.wm.WindowState.removeImmediately:2518 com.android.server.wm.WindowState.removeIfPossible:2699 
+08-25 17:45:00.878  1771  6000 D WindowManager: postWindowRemoveCleanupLocked: Removing startingWindow Window{1264e9 u0 Splash Screen com.example.demo} from ActivityRecord{ff1f758 u0 com.example.demo/.MainActivity t6484 f}} activity = ActivityRecord{ff1f758 u0 com.example.demo/.MainActivity t6484 f}}
+08-25 17:45:00.879  1771  6000 I WindowManager: cancelAnimation removed leash : Surface(name=Surface(name=ea4b6c6 NavigationBar0#92)/@0xaa29b4 - animation-leash of insets_animation#466498)/@0x9c15b48
+08-25 17:45:00.879  1026  1788 E BufferQueueDebug: [Surface(name=ea4b6c6 NavigationBar0#92)/@0xaa29b4 - animation-leash of insets_animation#466501](this:0xb40000717c87aa50,id:-1,api:0,p:-1,c:-1) id info cannot be read from 'Surface(name=ea4b6c6 NavigationBar0#92)/@0xaa29b4 - animation-leash of insets_animation#466501'
+08-25 17:45:00.879  1026  1788 I BufferQueueDebug: [Surface(name=ea4b6c6 NavigationBar0#92)/@0xaa29b4 - animation-leash of insets_animation#466501](this:0xb40000717c87aa50,id:-1,api:0,p:-1,c:-1) BufferQueue core=(1026:/system/bin/surfaceflinger)
+08-25 17:45:00.881  1771  6000 I WindowManager: cancelAnimation removed leash : Surface(name=Surface(name=6c66e2a StatusBar#97)/@0x41889b8 - animation-leash of insets_animation#466499)/@0x8a3d706
+08-25 17:45:00.881  1026  1788 E BufferQueueDebug: [Surface(name=6c66e2a StatusBar#97)/@0x41889b8 - animation-leash of insets_animation#466502](this:0xb40000717c88da50,id:-1,api:0,p:-1,c:-1) id info cannot be read from 'Surface(name=6c66e2a StatusBar#97)/@0x41889b8 - animation-leash of insets_animation#466502'
+08-25 17:45:00.882  1026  1788 I BufferQueueDebug: [Surface(name=6c66e2a StatusBar#97)/@0x41889b8 - animation-leash of insets_animation#466502](this:0xb40000717c88da50,id:-1,api:0,p:-1,c:-1) BufferQueue core=(1026:/system/bin/surfaceflinger)
+08-25 17:45:00.882   952  1030 I HfLooper: sensor light = 251.031998 2339808185939723
+08-25 17:45:00.888  1771  6000 W WindowManager: Changing focus from null to Window{9be5235 u0 com.miui.home/com.miui.home.launcher.Launcher} displayId=0 Callers=com.android.server.wm.RootWindowContainer.updateFocusedWindowLocked:561 com.android.server.wm.WindowManagerService.updateFocusedWindowLocked:6965 com.android.server.wm.WindowState.removeIfPossible:2711 com.android.server.wm.WindowToken.removeAllWindowsIfPossible:260 
+08-25 17:45:00.888  1771  6000 I whetstone.activity: Power Event callback listener is empty for resId=32
+08-25 17:45:00.888  1771  6000 D BatteryStatsManagerStub: notifyEvent for resId=32 used 0ms
+08-25 17:45:00.889  1771  6000 D WindowManager: wms.Input focus has changed to Window{9be5235 u0 com.miui.home/com.miui.home.launcher.Launcher} display=0 updateInputWindows = true
+08-25 17:45:00.889  1771  6000 I MultiSenceManagerInternalStub: getInstance
+08-25 17:45:00.889  1771  2268 I MultiSenceManagerInternalStubImpl: packageName = com.miui.home
+08-25 17:45:00.889  1771  6000 W InputManager-JNI: Input channel object '7f5018a com.example.demo/com.example.demo.MainActivity (client)' was disposed without first being removed with the input manager!
+08-25 17:45:00.889  1771  2268 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:1231 com.android.server.wm.MultiSenceManagerInternalStubImpl.sendFocusWindowsBroadcast:148 com.android.server.wm.MultiSenceManagerInternalStubImpl$UpdateScreenStatus.run:98 android.os.Handler.handleCallback:958 android.os.Handler.dispatchMessage:99 
+08-25 17:45:00.889  1771  6000 D WindowManager: setParent old=ActivityRecord{ff1f758 u0 com.example.demo/.MainActivity t6484 f}},new=null,this window=Window{7f5018a u0 com.example.demo/com.example.demo.MainActivity},callers=com.android.server.wm.WindowContainer.removeChild:840 com.android.server.wm.ActivityRecord.removeChild:5301 com.android.server.wm.ActivityRecord.removeChild:470 com.android.server.wm.WindowContainer.removeImmediately:898 com.android.server.wm.WindowState.removeImmediately:2518 com.android.server.wm.WindowState.removeIfPossible:2699 
+08-25 17:45:00.893  1771  6000 I WindowManager: Not remove startingWindow because this = ActivityRecord{ff1f758 u0 com.example.demo/.MainActivity t6484 f}} WaitForSyncTransactionCommit = true mSyncState = 0 isCollecting = false collecting = null
+08-25 17:45:00.894  1771  6000 D WindowManager: setParent old=Task{97350b1 #6484 type=standard I=com.example.demo/.MainActivity},new=null,this window=ActivityRecord{ff1f758 u0 com.example.demo/.MainActivity t6484 f}},callers=com.android.server.wm.WindowContainer.removeChild:840 com.android.server.wm.TaskFragment.removeChild:3193 com.android.server.wm.Task.removeChild:1825 com.android.server.wm.Task.removeChild:1805 com.android.server.wm.WindowContainer.removeImmediately:898 com.android.server.wm.WindowToken.removeImmediately:376 
+08-25 17:45:00.894  1026  1788 E BufferQueueDebug: [Task=6484#466503](this:0xb40000717c8faa50,id:-1,api:0,p:-1,c:-1) id info cannot be read from 'Task=6484#466503'
+08-25 17:45:00.894  1026  1788 I BufferQueueDebug: [Task=6484#466503](this:0xb40000717c8faa50,id:-1,api:0,p:-1,c:-1) BufferQueue core=(1026:/system/bin/surfaceflinger)
+08-25 17:45:00.895  1404  2105 D libcomposer_ext: ClientImplAidl::getDispDumpEnable()
+08-25 17:45:00.895  1026  1201 D SurfaceFlinger: [SF client] REMOVE (0xb40000717f4bec80) for (19322:com.example.demo)
+08-25 17:45:00.895  1026  1200 D SurfaceFlinger: [SF client] REMOVE (0xb40000717f4be280) for (19322:com.example.demo)
+08-25 17:45:00.896  1771  6319 V ActivityManager: Death received in com.android.server.am.ActivityManagerService$AppDeathRecipient@db86f72 for thread android.os.BinderProxy@da85fc3
+08-25 17:45:00.896   944  4465 D libcomposer_ext: DeviceImplAidl::syncPerform(13), client_handle: 1
+08-25 17:45:00.896   944  4465 E libcomposer_ext: DeviceImplAidl::DeviceClientContextAidl::ParseGetDispDumpEnable()
+08-25 17:45:00.896   944  4465 I hwcomposer: [HWC] getDispDumpEnable(), dpy 1, enable 0, (0,0,160,130), (160, 130), 3  
+08-25 17:45:00.896   944  4465 I hwcomposer: [DISP_DUMP] setEnable(), dpy(0), enable 0, src(0, 0, 160, 130), dst(160, 130), fmt 0x3  
+08-25 17:45:00.896  1404  2105 E libsensor-frameBufferManager: frameBufferManager_sensor_debug : getDispDump_Disable ret = 0
+08-25 17:45:00.896  1771  6000 D WindowManager: setParent old=DefaultTaskDisplayArea@251530737,new=null,this window=Task{97350b1 #6484 type=standard I=com.example.demo/.MainActivity},callers=com.android.server.wm.WindowContainer.removeChild:840 com.android.server.wm.TaskDisplayArea.removeChildTask:359 com.android.server.wm.TaskDisplayArea.removeChild:350 com.android.server.wm.WindowContainer.removeImmediately:898 com.android.server.wm.TaskFragment.removeImmediately:3277 com.android.server.wm.Task.removeImmediately:3225 
+08-25 17:45:00.897  1404  2109 D libsensor-parseRGB: the value of RGB [215.051746 209.825066 208.294197], powPara: 1.527992
+08-25 17:45:00.897  2751  2872 V WindowManagerShell: Track 0 became idle
+08-25 17:45:00.897  2751  2872 V WindowManagerShell: All active transition animations finished
+08-25 17:45:00.897   931   931 I Zygote  : Process 19322 exited due to signal 9 (Killed)
+08-25 17:45:00.897  2751  2872 V WindowManagerShell:  animated by com.android.wm.shell.transition.DefaultTransitionHandler@ecc2f6f
+08-25 17:45:00.897  2751  2872 V WindowManagerShell: Track 0 became idle
+08-25 17:45:00.897  2751  2872 V WindowManagerShell: All active transition animations finished
+08-25 17:45:00.897  2751  2872 D MiuiFullScreenTaskRepository: addOrUpdateFullScreenTaskInfo taskId=6484, topActivity=null
+08-25 17:45:00.898  1771  4785 V WindowManager: Schedule remove starting ActivityRecord{ff1f758 u0 com.example.demo/.MainActivity t-1 f}} startingWindow=Window{1264e9 u0 Splash Screen com.example.demo} animate=true Callers=com.android.server.wm.ActivityRecord.onSyncTransactionCommitted:3445 com.android.server.wm.BLASTSyncEngine$SyncGroup$1CommitCallback.onCommitted:267 com.android.server.wm.BLASTSyncEngine$SyncGroup.lambda$finishNow$2:298 com.android.server.wm.BLASTSyncEngine$SyncGroup$$ExternalSyntheticLambda0.onTransactionCommitted:2 android.view.SurfaceControl$Transaction$$ExternalSyntheticLambda1.run:2 
+08-25 17:45:00.898  1026  1026 I BufferQueueDebug: [Surface(name=6c66e2a StatusBar#97)/@0x41889b8 - animation-leash of insets_animation#466493](this:0xb40000717c977a50,id:-1,api:0,p:-1,c:1026) onDestructor()
+08-25 17:45:00.898  2751  2751 E onWindowDecorRectChanged: start size:0
+08-25 17:45:00.899  1026  1026 I BufferQueueDebug: [Surface(name=ea4b6c6 NavigationBar0#92)/@0xaa29b4 - animation-leash of insets_animation#466492](this:0xb40000717df2aa50,id:-1,api:0,p:-1,c:1026) onDestructor()
+08-25 17:45:00.899  2751  3073 W RenderInspector: QueueBuffer time out on StatusBar, count=1, avg=9 ms, max=9 ms.
+08-25 17:45:00.899  1771  4785 W TaskSnapshot_CInjector: doSnapshotQS()...ago! activity=com.example.demo/.MainActivity, state=DESTROYED, lastVisibleTime=0
+08-25 17:45:00.899  2751  2930 V ShellStartingWindow: Task start finish, remove starting surface for task: 6484
+08-25 17:45:00.900  1026  3100 D SurfaceFlinger: [SF client] REMOVE (0xb40000717d7fc080) for (1771:system_server)
+08-25 17:45:00.901  1771  2999 I ClipboardServiceI: checkProviderWakePathForClipboard: primaryClip is null
+08-25 17:45:00.901  1771  1935 W ActivityManager: setHasOverlayUi called on unknown pid: 19322
+08-25 17:45:00.901  1771  2268 W ActivityManagerServiceImpl: Sending non-protected broadcast com.xiaomi.multisence.action.FOCUSED_CHANGE from system 1771:system/1000 pkg android. Callers=com.android.server.am.ActivityManagerService.checkBroadcastFromSystem:15207 com.android.server.am.ActivityManagerService.broadcastIntentLockedTraced:16037 com.android.server.am.ActivityManagerService.broadcastIntentLocked:15265 com.android.server.am.ActivityManagerService.broadcastIntentWithFeature:16255 android.app.ContextImpl.sendBroadcast:1235 
+08-25 17:45:00.902  1771  1936 D SurfaceComposerClient: Transaction::apply InputWindowCommands.focusRequests timestamp=1423626727383699, windowName=9be5235 com.miui.home/com.miui.home.launcher.Launcher
+08-25 17:45:00.903  1771  6319 V ActivityManager: Got obituary of 19322:com.example.demo
+08-25 17:45:00.905  1771  2237 D GreezeManager: THAW uid = 10152 pid = [ 18554 18704 ]  reason : provider caller : 1000
+08-25 17:45:00.906  1771  1936 W ActivityTaskManager: Can't find TaskDisplayArea to determine support for multi window. Task id=6484 attached=false
+08-25 17:45:00.907  1026  1026 D SurfaceFlinger: Focus addInputWindowCommands timestamp=1423626727383699, windowName=9be5235 com.miui.home/com.miui.home.launcher.Launcher
+08-25 17:45:00.907  2751  2872 D MiuiFullScreenTaskRepository: removeFullScreenTask taskId=6484, topActivity=null
+08-25 17:45:00.908  2751  2872 D MiuiWindowDecorViewModel: destroyWindowDecoration: taskId=6484, windowingMode=1, mWindowDecorByTaskId.size()=0, callers=com.android.wm.shell.fullscreen.FullscreenTaskListener.onTaskVanished:143 com.android.wm.shell.ShellTaskOrganizer.onTaskVanished:138 android.window.TaskOrganizer$1.lambda$onTaskVanished$6:398 android.window.TaskOrganizer$1.$r8$lambda$z23H3L3GZav04D10kA3vkevrglg:0 android.window.TaskOrganizer$1$$ExternalSyntheticLambda14.run:4 
+08-25 17:45:00.908  2380 25494 D RecentsModel: onTaskStackChangedBackground
+08-25 17:45:00.908  2380 25494 D EventBus: No subscribers registered for event class com.miui.home.recents.messages.RecentTasksChangedEvent
+08-25 17:45:00.908  2380  3125 D RecentsModel: onTaskStackChangedBackground    MSG_TASK_STACK_CHANGE
+08-25 17:45:00.908  2380 25494 D EventBus: No subscribers registered for event class org.greenrobot.eventbus.NoSubscriberEvent
+08-25 17:45:00.908  2380  3125 D RecentsModel: preloadRecents
+08-25 17:45:00.908  2380  3125 W RecentsModel: getRunningTask
+08-25 17:45:00.910  1026  1785 D SurfaceFlinger: updateWinowInfo=1, setFocusedWindow timestamp=1423626727383699, windowName=9be5235 com.miui.home/com.miui.home.launcher.Launcher
+08-25 17:45:00.912  2380  2380 D Launcher.Lifecycle: onWindowFocusChanged:true,UserHandle{0},5908702,false
+08-25 17:45:00.912  2380  2380 D Launcher_UnlockAnimationStateMachine: onWindowFocus:IDLE
+08-25 17:45:00.912  2380  2380 D Launcher_UnlockAnimationStateMachine: showAnimation = IDLE
+08-25 17:45:00.912 18554 18594 I Market-LocalAppManager: checkUpdateFromServer : start
+08-25 17:45:00.913 18554 18594 I Market-LocalAppManager: getUpdateInfoFromServer : start,isBackground=true
+08-25 17:45:00.913  2380  2380 I HandWritingStubImpl: refreshLastKeyboardType: 1
+08-25 17:45:00.913  2380  2380 I HandWritingStubImpl: getCurrentKeyboardType: 1
+08-25 17:45:00.914  1771  2999 W InputMethodManagerService: Clear show forced flag.
+08-25 17:45:00.915  2751  2930 D View    : [Warning] assignParent to null: this = android.widget.FrameLayout{334e407 V.E...... ......I. 0,0-1220,2712}
+08-25 17:45:00.915  1771  2999 I ImeTracker: com.miui.home:f0e48515: onRequestHide at ORIGIN_SERVER_HIDE_INPUT reason HIDE_SAME_WINDOW_FOCUSED_WITHOUT_EDITOR
+08-25 17:45:00.915  7677 27146 D MirrorManager:  sendAcceptInput 0 0
+08-25 17:45:00.916  1771  2999 I ImeTracker: com.miui.home:f0e48515: onCancelled at PHASE_SERVER_SHOULD_HIDE
+08-25 17:45:00.916 18554 18594 I Market-LocalAppManager: getUpdateInfoFromServer : middle
+08-25 17:45:00.916  1771  2999 W SecurityInputMethodSwitcher: first check switch to security ime: false
+08-25 17:45:00.920  1771  6319 W WindowManager: Failed looking up window session=Session{c0ed324 2751:1000} callers=com.android.server.wm.WindowManagerService.windowForClientLocked:6848 com.android.server.wm.WindowManagerService.relayoutWindow:2658 com.android.server.wm.Session.relayout:266 
+08-25 17:45:00.920  1771  2999 W SecurityInputMethodSwitcher: double check switch to security ime: false
+08-25 17:45:00.921  2751  2751 D BadgeCoordinator: recevie broadbcast ACTION_APPLICATION_MESSAGE_QUERY, requestFirstTime=false
+08-25 17:45:00.921  1771  2999 W SecurityInputMethodSwitcher: switch to other input method from security ime:false mayChangeToMiuiSecurityInputMethod: false current focus window: android.os.BinderProxy@851bc6c
+08-25 17:45:00.921  2751  2930 D BLASTBufferQueue: [VRI[demo]#8530](f:0,a:1) destructor()
+08-25 17:45:00.922  1026  3100 I BpBinder: onLastStrongRef automatically unlinking death recipients: 
+08-25 17:45:00.922  2751  2930 D BufferQueueConsumer: [VRI[demo]#8530(BLAST Consumer)8530](id:abf000021bb,api:0,p:-1,c:2751) disconnect
+08-25 17:45:00.924  2380  3125 W RecentsModel: getRunningTask   taskInfo=TaskInfo{userId=0 taskId=2 displayId=0 isRunning=true baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10000100 cmp=com.miui.home/.launcher.Launcher } baseActivity=ComponentInfo{com.miui.home/com.miui.home.launcher.Launcher} topActivity=ComponentInfo{com.miui.home/com.miui.home.launcher.Launcher} origActivity=null realActivity=ComponentInfo{com.miui.home/com.miui.home.launcher.Launcher} numActivities=1 lastActiveTime=2339808228 supportsSplitScreenMultiWindow=true supportsMultiWindow=true resizeMode=2 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=200 token=WCT{android.window.IWindowContainerToken$Stub$Proxy@f03bbe2} topActivityType=2 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=null topActivityInfo=ActivityInfo{aa20b73 com.miui.home.launcher.Launcher} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=true isVisibleRequested=true isSleeping=false topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= false topActivityLetterboxed= false isFromDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 locusId=null displayAreaFeatureId=1 cameraCompatControlState=hidden mIsCastMode=false mTopActivityMediaSize=null mTopActivityRecordName=ActivityRecord{382c2a1 u0 com.miui.home/.launcher.Launcher t2} mTopActivityOrientation=1 mTopActivityWindowIsNowVisible=false isTranslucent=false isEmbedded=false shouldBeVisible=true isImmersive=false mBehindAppLockPkg=null mOriginatingUid=0}
+08-25 17:45:00.924  2380  3125 W RecentsModel: getTaskInfoIgnoreHomeAndFreeform   taskInfo=ComponentInfo{com.miui.home/com.miui.home.launcher.Launcher}
+08-25 17:45:00.924  2380  3125 D ActivityManagerWrapper: getTaskId :2
+08-25 17:45:00.925 18554 18594 I Market-RetrofitRequest: callStart : https://updateinfo.market.xiaomi.com/apm/updateinfo/v2
+08-25 17:45:00.925  2380  3125 E ActivityManagerWrapper: get all recent tasks force including 2
+08-25 17:45:00.927  2751  2930 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=falsecallback=android.view.ViewRootImpl$$ExternalSyntheticLambda23@81520e6
+08-25 17:45:00.927 18554 18594 I Market-RetrofitRequest: HeaderInterceptor : https://updateinfo.market.xiaomi.com/apm/updateinfo/v2
+08-25 17:45:00.928  1026  1026 I BufferQueueDebug: [Surface(name=ea4b6c6 NavigationBar0#92)/@0xaa29b4 - animation-leash of insets_animation#466498](this:0xb40000717c831a50,id:-1,api:0,p:-1,c:1026) onDestructor()
+08-25 17:45:00.928  1026  1026 I BufferQueueDebug: [Surface(name=6c66e2a StatusBar#97)/@0x41889b8 - animation-leash of insets_animation#466499](this:0xb40000717c858a50,id:-1,api:0,p:-1,c:1026) onDestructor()
+08-25 17:45:00.928  1026  1026 I BufferQueueDebug: [Task=6484#466503](this:0xb40000717c8faa50,id:-1,api:0,p:-1,c:1026) onDestructor()
+08-25 17:45:00.928  1026  1026 I BufferQueueDebug: [394043b ActivityRecordInputSink com.example.demo/.MainActivity#466483](this:0xb40000717cb01a50,id:-1,api:0,p:-1,c:1026) onDestructor()
+08-25 17:45:00.928  1026  1026 I BufferQueueDebug: [com.example.demo/com.example.demo.MainActivity#466491](this:0xb40000717df0aa50,id:-1,api:0,p:-1,c:1026) onDestructor()
+08-25 17:45:00.928  1026  1026 I BufferQueueDebug: [Bounds for - com.example.demo/com.example.demo.MainActivity#466494](this:0xb40000717c7b3a50,id:-1,api:0,p:-1,c:1026) onDestructor()
+08-25 17:45:00.928  1026  1026 I BufferQueueDebug: [SurfaceView[com.example.demo/com.example.demo.MainActivity]#466495](this:0xb40000717c7f0a50,id:-1,api:0,p:-1,c:1026) onDestructor()
+08-25 17:45:00.928  1026  1026 I BufferQueueDebug: [SurfaceView[com.example.demo/com.example.demo.MainActivity](BLAST)#466496](this:0xb40000717c825a50,id:-1,api:0,p:-1,c:1026) onDestructor()
+08-25 17:45:00.928  1026  1786 E BpTransactionCompletedListener: Failed to transact (-32)
+08-25 17:45:00.928  1026  1026 I BufferQueueDebug: [Background for SurfaceView[com.example.demo/com.example.demo.MainActivity]#466497](this:0xb40000717e055a50,id:-1,api:0,p:-1,c:1026) onDestructor()
+08-25 17:45:00.928  1026  1026 I BufferQueueDebug: [ActivityRecord{ff1f758 u0 com.example.demo/.MainActivity t6484}#466479](this:0xb40000717df42a50,id:-1,api:0,p:-1,c:1026) onDestructor()
+08-25 17:45:00.928  1026  1026 I BufferQueueDebug: [1264e9 Splash Screen com.example.demo#466480](this:0xb40000717df4ca50,id:-1,api:0,p:-1,c:1026) onDestructor()
+08-25 17:45:00.928  1026  1026 I BufferQueueDebug: [Splash Screen com.example.demo#466481](this:0xb40000717df97a50,id:-1,api:0,p:-1,c:1026) onDestructor()
+08-25 17:45:00.928  1026  1026 I BufferQueueDebug: [7f5018a com.example.demo/com.example.demo.MainActivity#466490](this:0xb40000717e04fa50,id:-1,api:0,p:-1,c:1026) onDestructor()
+08-25 17:45:00.933 18554 18594 I Market-LimitSpeedManager: startLimitSpeedNow() ====== speed = 32768
+08-25 17:45:00.934  2380  2380 W BlurUtils: restore blur ratio:0.0 for window: com.android.internal.policy.PhoneWindow@7a79ec4
+08-25 17:45:00.934  2380  2380 E BlurUtils: fastBlurDirectly ratio=0.0   win=com.android.internal.policy.PhoneWindow@7a79ec4
+08-25 17:45:00.935  2380  2380 W BlurUtils: save blur ratio:0.0 for window: com.android.internal.policy.PhoneWindow@7a79ec4
+08-25 17:45:00.937  2380  2893 D StatusBarController: handleMessage: flag 800000  disable false
+08-25 17:45:00.938  1771  6319 W WindowManager: Failed looking up window session=Session{c0ed324 2751:1000} callers=com.android.server.wm.WindowManagerService.windowForClientLocked:6848 com.android.server.wm.WindowManagerService.removeWindow:2418 com.android.server.wm.Session.remove:248 
+08-25 17:45:00.940 23028 23054 D DMS_LimitSpeedService: limit speed(32.00KB/s) success 
+08-25 17:45:00.940  1771  5161 W WindowManager: Failed looking up window session=Session{c0ed324 2751:1000} callers=com.android.server.wm.WindowManagerService.windowForClientLocked:6848 com.android.server.wm.Session.setOnBackInvokedCallbackInfo:961 android.view.IWindowSession$Stub.onTransact:1174 
+08-25 17:45:00.940  1771  5161 I WindowManager: setOnBackInvokedCallback(): No window state for package:com.android.systemui
+08-25 17:45:00.941 18554 18594 I Market-DownloadLimitSpeedManager: startLimitSpeed success. Total count 1
+08-25 17:45:00.941 18554 18594 I Market-RetrofitRequest: HeaderInterceptor : https://updateinfo.market.xiaomi.com/apm/updateinfo/v2
+08-25 17:45:00.942  2380  2380 D Launcher_WallpaperUtils: changeStatusBarMode:false
+08-25 17:45:00.947  2380  3125 E ActivityManagerWrapper: getRecentTasks: size=35
+08-25 17:45:00.947  2380  3125 E ActivityManagerWrapper: getRecentTasks: mainTaskId=6484   userId=0   windowMode=1   baseIntent=Intent { act=android.intent.action.MAIN flag=270532608 cmp=ComponentInfo{com.example.demo/com.example.demo.MainActivity} }
+08-25 17:45:00.947  2380  3125 E ActivityManagerWrapper: getRecentTasks: mainTaskId=6459   userId=0   windowMode=1   baseIntent=Intent { act=android.intent.action.VIEW flag=318767107 cmp=ComponentInfo{com.tencent.mtt/com.tencent.mtt.external.reader.thirdcall.ThirdCallApkFileReaderAlias} }
+08-25 17:45:00.947  2380  3125 E ActivityManagerWrapper: getRecentTasks: mainTaskId=6413   userId=0   windowMode=1   baseIntent=Intent { act=android.intent.action.MAIN flag=270532608 cmp=ComponentInfo{com.ss.android.lark/com.ss.android.lark.main.app.MainActivity} }
+08-25 17:45:00.947  2380  3125 E ActivityManagerWrapper: getRecentTasks: mainTaskId=6269   userId=0   windowMode=1   baseIntent=Intent { act=android.intent.action.MAIN flag=270532608 cmp=ComponentInfo{com.tencent.mm/com.tencent.mm.ui.LauncherUI} }
+08-25 17:45:00.947  2380  3125 E ActivityManagerWrapper: getRecentTasks: mainTaskId=6391   userId=0   windowMode=1   baseIntent=Intent { act=android.intent.action.MAIN flag=270532608 cmp=ComponentInfo{com.tencent.mobileqq/com.tencent.mobileqq.activity.SplashActivity} }
+08-25 17:45:00.947  2380  3125 E ActivityManagerWrapper: getRecentTasks: mainTaskId=6437   userId=0   windowMode=1   baseIntent=Intent { act=android.settings.APPLICATION_DEVELOPMENT_SETTINGS flag=268468224 cmp=ComponentInfo{com.android.settings/com.android.settings.Settings$DevelopmentSettingsDashboardActivity} }
+08-25 17:45:00.947  2380  3125 E ActivityManagerWrapper: getRecentTasks: mainTaskId=6244   userId=0   windowMode=1   baseIntent=Intent { act=android.intent.action.MAIN flag=270532608 cmp=ComponentInfo{cmb.pb/cmb.pb.app.mainframe.container.PBMainActivity} }
+08-25 17:45:00.947  2380  3125 E ActivityManagerWrapper: getRecentTasks: mainTaskId=6427   userId=0   windowMode=1   baseIntent=Intent { act=com.miui.weather.widget_weather_detail flag=270532608 cmp=ComponentInfo{com.miui.weather2/com.miui.weather2.ActivityWeatherMain} }
+08-25 17:45:00.947  2380  3125 E ActivityManagerWrapper: getRecentTasks: mainTaskId=6398   userId=0   windowMode=1   baseIntent=Intent { act=android.intent.action.MAIN flag=270532608 cmp=ComponentInfo{com.android.camera/com.android.camera.Camera} }
+08-25 17:45:00.947  2380  3125 E ActivityManagerWrapper: getRecentTasks: mainTaskId=6426   userId=0   windowMode=1   baseIntent=Intent { act=android.intent.action.MAIN flag=270532608 cmp=ComponentInfo{com.android.deskclock/com.android.deskclock.DeskClockTabActivity} }
+08-25 17:45:00.947  2380  3125 E ActivityManagerWrapper: getRecentTasks: mainTaskId=6250   userId=0   windowMode=1   baseIntent=Intent { act=android.intent.action.MAIN flag=270532608 cmp=ComponentInfo{tv.danmaku.bili/tv.danmaku.bili.MainActivityV2} }
+08-25 17:45:00.947  2380  3125 E ActivityManagerWrapper: getRecentTasks: mainTaskId=6356   userId=0   windowMode=1   baseIntent=Intent { act=android.intent.action.MAIN flag=270532608 cmp=ComponentInfo{com.jingdong.app.mall/com.jingdong.app.mall.MainFrameActivity} }
+08-25 17:45:00.947  2380  3125 E ActivityManagerWrapper: getRecentTasks: mainTaskId=6315   userId=0   windowMode=1   baseIntent=Intent { act=android.intent.action.MAIN flag=270532608 cmp=ComponentInfo{com.xingin.xhs/com.xingin.xhs.index.v2.IndexActivityV2} }
+08-25 17:45:00.947  2380  3125 E ActivityManagerWrapper: getRecentTasks: mainTaskId=6261   userId=0   windowMode=1   baseIntent=Intent { act=android.intent.action.MAIN flag=270532608 cmp=ComponentInfo{com.sina.weibo/com.sina.weibo.SplashActivity} }
+08-25 17:45:00.947  2380  3125 E ActivityManagerWrapper: getRecentTasks: mainTaskId=6376   userId=0   windowMode=1   baseIntent=Intent { act=android.intent.action.MAIN flag=270532608 cmp=ComponentInfo{com.tencent.mtt/com.tencent.mtt.SplashActivity} }
+08-25 17:45:00.947  2380  3125 E ActivityManagerWrapper: getRecentTasks: mainTaskId=6400   userId=0   windowMode=1   baseIntent=Intent { act=android.intent.action.MAIN flag=270532608 cmp=ComponentInfo{com.eg.android.AlipayGphone/com.eg.android.AlipayGphone.AlipayLogin} }
+08-25 17:45:00.947  2380  3125 E ActivityManagerWrapper: getRecentTasks: mainTaskId=6425   userId=0   windowMode=1   baseIntent=Intent { act=android.intent.action.MAIN flag=872415232 cmp=ComponentInfo{com.android.calendar/com.android.calendar.AllInOneActivity} }
+08-25 17:45:00.947  2380  3125 E ActivityManagerWrapper: getRecentTasks: mainTaskId=6377   userId=0   windowMode=1   baseIntent=Intent { act=android.intent.action.MAIN flag=270532608 cmp=ComponentInfo{com.autonavi.minimap/com.autonavi.map.activity.SplashActivity} }
+08-25 17:45:00.947  2380  3125 E ActivityManagerWrapper: getRecentTasks: mainTaskId=6363   userId=0   windowMode=1   baseIntent=Intent { act=android.intent.action.MAIN flag=270532608 cmp=ComponentInfo{com.android.mms/com.android.mms.ui.MmsTabActivity} }
+08-25 17:45:00.947  2380  3125 E ActivityManagerWrapper: getRecentTasks: mainTaskId=6126   userId=0   windowMode=1   baseIntent=Intent { act=android.intent.action.MAIN flag=270532608 cmp=ComponentInfo{com.smzdm.client.android/com.smzdm.client.android.app.WelComeActivity} }
+08-25 17:45:00.947  2380  3125 E ActivityManagerWrapper: getRecentTasks: mainTaskId=6422   userId=0   windowMode=1   baseIntent=Intent { act=android.intent.action.MAIN flag=270532608 cmp=ComponentInfo{com.taobao.taobao/com.taobao.tao.welcome.Welcome} }
+08-25 17:45:00.947  2380  3125 E ActivityManagerWrapper: getRecentTasks: mainTaskId=6420   userId=0   windowMode=1   baseIntent=Intent { act=android.intent.action.MAIN flag=270532608 cmp=ComponentInfo{com.xiaomi.smarthome/com.xiaomi.smarthome.SmartHomeMainActivity} }
+08-25 17:45:00.947  2380  3125 E ActivityManagerWrapper: getRecentTasks: mainTaskId=6246   userId=0   windowMode=1   baseIntent=Intent { act=android.intent.action.MAIN flag=270532608 cmp=ComponentInfo{com.android.bankabc/com.android.bankabc.LauncherActivity} }
+08-25 17:45:00.947  2380  3125 E ActivityManagerWrapper: getRecentTasks: mainTaskId=6418   userId=0   windowMode=1   baseIntent=Intent { act=android.intent.action.MAIN flag=270532608 cmp=ComponentInfo{com.miui.notes/com.miui.notes.ui.NotesListActivity} }
+08-25 17:45:00.947  2380  3125 E ActivityManagerWrapper: getRecentTasks: mainTaskId=6404   userId=0   windowMode=1   baseIntent=Intent { act=android.intent.action.MAIN flag=270532608 cmp=ComponentInfo{com.miui.calculator/com.miui.calculator.cal.CalculatorActivity} }
+08-25 17:45:00.947  2380  3125 E ActivityManagerWrapper: getRecentTasks: mainTaskId=6417   userId=0   windowMode=1   baseIntent=Intent { act=android.intent.action.MAIN flag=270532608 cmp=ComponentInfo{com.xunmeng.pinduoduo/com.xunmeng.pinduoduo.ui.activity.MainFrameActivity} }
+08-25 17:45:00.947  2380  3125 E ActivityManagerWrapper: getRecentTasks: mainTaskId=6243   userId=0   windowMode=1   baseIntent=Intent { act=android.intent.action.MAIN flag=270532608 cmp=ComponentInfo{com.byd.aeri.caranywhere/com.byd.aeri.splash.module_splash.activity.DynastyLaunchActivity} }
+08-25 17:45:00.947  2380  3125 E ActivityManagerWrapper: getRecentTasks: mainTaskId=6359   userId=0   windowMode=1   baseIntent=Intent { act=android.intent.action.MAIN flag=270532608 cmp=ComponentInfo{com.sankuai.meituan/com.meituan.android.pt.homepage.activity.MainActivity} }
+08-25 17:45:00.947  2380  3125 E ActivityManagerWrapper: getRecentTasks: mainTaskId=6371   userId=0   windowMode=1   baseIntent=Intent { act=null flag=268435456 cmp=ComponentInfo{com.baidu.netdisk/com.baidu.netdisk.ui.MainActivity} }
+08-25 17:45:00.947  2380  3125 E ActivityManagerWrapper: getRecentTasks: mainTaskId=6368   userId=0   windowMode=1   baseIntent=Intent { act=android.intent.action.MAIN flag=270532608 cmp=ComponentInfo{com.taobao.idlefish/com.taobao.fleamarket.home.activity.InitActivity} }
+08-25 17:45:00.947  2380  3125 E ActivityManagerWrapper: getRecentTasks: mainTaskId=6318   userId=0   windowMode=1   baseIntent=Intent { act=android.intent.action.MAIN flag=270532608 cmp=ComponentInfo{com.miui.gallery/com.miui.gallery.activity.HomePageActivity} }
+08-25 17:45:00.947  2380  3125 E ActivityManagerWrapper: getRecentTasks: mainTaskId=6378   userId=0   windowMode=1   baseIntent=Intent { act=android.intent.action.MAIN flag=270532608 cmp=ComponentInfo{com.pingan.carowner/com.pingan.carowner.activity.SplashActivity} }
+08-25 17:45:00.947  2380  3125 E ActivityManagerWrapper: getRecentTasks: mainTaskId=6392   userId=0   windowMode=1   baseIntent=Intent { act=android.intent.action.MAIN flag=270532608 cmp=ComponentInfo{com.app.ankichinas/com.ichi2.anki.IntentHandler} }
+08-25 17:45:00.947  2380  3125 E ActivityManagerWrapper: getRecentTasks: mainTaskId=6258   userId=0   windowMode=1   baseIntent=Intent { act=android.intent.action.MAIN flag=270532608 cmp=ComponentInfo{com.moutai.mall/com.moutai.mall.module.splash.SplashActivity} }
+08-25 17:45:00.947  2380  3125 E ActivityManagerWrapper: getRecentTasks: mainTaskId=6389   userId=0   windowMode=1   baseIntent=Intent { act=android.intent.action.SEARCH flag=270532608 cmp=ComponentInfo{com.android.quicksearchbox/com.android.quicksearchbox.SearchActivityTransparent} }
+08-25 17:45:00.948  2380  3125 D WorldCirculate: getWorldCirculateInfo, taskInfo.baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.example.demo/.MainActivity }, displayId=-1, but get Display failed
+08-25 17:45:00.953  2380  3125 D WorldCirculate: getWorldCirculateInfo, taskInfo.baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.android.deskclock/.DeskClockTabActivity }, displayId=-1, but get Display failed
+08-25 17:45:00.954  2380  3125 D WorldCirculate: getWorldCirculateInfo, taskInfo.baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.jingdong.app.mall/.MainFrameActivity }, displayId=-1, but get Display failed
+08-25 17:45:00.954  2380  3125 D WorldCirculate: getWorldCirculateInfo, taskInfo.baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.eg.android.AlipayGphone/.AlipayLogin }, displayId=-1, but get Display failed
+08-25 17:45:00.955  2380  3125 D WorldCirculate: getWorldCirculateInfo, taskInfo.baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.pingan.carowner/.activity.SplashActivity }, displayId=-1, but get Display failed
+08-25 17:45:00.955  2380  3125 D WorldCirculate: getWorldCirculateInfo, taskInfo.baseIntent=Intent { act=android.intent.action.SEARCH dat=qsb://query/... flg=0x10200000 cmp=com.android.quicksearchbox/.SearchActivityTransparent }, displayId=-1, but get Display failed
+08-25 17:45:00.991  1771  3089 I NetworkBoostStatusManager: handle: 107
+08-25 17:45:00.993  1404  2113 I libsensor-displayalgo: dbv:689,lux:256.4,hsv:-1.0,dc:0CWB R:3665.3,G:3530.0,B:3490.8Event ALS:20574.0,IR:196.0Cali ALS:6222.6,IR:25.1
+08-25 17:45:00.998  1771  3089 D SLM-SRV-SLAService: isModemSingnalStrengthStatus = 0
+08-25 17:45:01.017 18554 18594 I Market-DownloadLimitSpeedManager: stopLimitSpeed
+08-25 17:45:01.017 18554 18594 I Market-LimitSpeedManager: stopLimitSpeedNow() =========== 
+08-25 17:45:01.020 23028 23054 D DMS_LimitSpeedService: exit limit speed(-1.00B/s) success 
+08-25 17:45:01.021 18554 18594 I Market-RetrofitRequest: callEnd : https://updateinfo.market.xiaomi.com/apm/updateinfo/v2
+08-25 17:45:01.021 18554 18594 I Market-LocalAppManager: getUpdateInfoFromServer : end  , responseCode : OK
+08-25 17:45:01.021 18554 18594 I Market-LocalAppManager: checkUpdateFromServer : end
+08-25 17:45:01.022 18554 18594 W Market-DataParser: [AppList] JSON : list is null
+08-25 17:45:01.022 18554 18594 W Market-DataParser: No value for listApp
+08-25 17:45:01.022 18554 18587 E Market-UpdateDesktopOperateIconManager: [OperateIconConfig] JSON : operation icon config list not exist!
+08-25 17:45:01.022 18554 18587 I Market-UpdateDesktopOperateIconManager: [OperateIconConfig] JSON: parser operateIconConfigList : null
+08-25 17:45:01.022 18554 18594 I Market-LocalAppManager: checkUpdateFromServer  data parser : end
+08-25 17:45:01.022 18554 18594 I Market-HuanjiManager: condition not satisfied, ignore
+08-25 17:45:01.022 18554 18594 I Market-DataParser: [InvalidPackageList] JSON : invalidSystemPackageList list is null
+08-25 17:45:01.022 18554 18594 I Market-LocalAppManager: checkUpdateFromServer  filter package : end
+08-25 17:45:01.022 18554 18594 I Market-LocalAppManager: checkUpdateFromServer  support64BitPackagesJsonArray : end
+08-25 17:45:01.023 13339 13392 I ThirdAppAssistant: AppStoreHelper queryPackageInfo result=1 oldVersionName=1.0.0 oldVersionCode=1
+08-25 17:45:01.025 21238 21261 I htmlviewercloudcontrol: isStagingEnv:false param =  taa_EmergentProblem  uriMatch = 2, cluster: cn, version: 582670, traceId: 6f2379f106870f670bf62834b0d4d0ee, regId: Hl0Pgoa7ZHevxyNm8hAYXAR7lHf7qqiPOCBNwBliblfcrP6DbOicg0yqTrPo5vxs
+08-25 17:45:01.026  1026  1026 I BufferQueueProducer: [com.miui.home/com.miui.home.launcher.Launcher#466384](this:0xb40000717db88a50,id:-1,api:0,p:-1,c:1026) queueBuffer: fps=40.68 dur=1007.91 max=357.94 min=7.37
+08-25 17:45:01.029 25833 26039 D IdProviderImpl: getOAID from com.miui.analytics
+08-25 17:45:01.030 21238 21261 I htmlviewercloudcontrol: isStagingEnv:false param =  taa_CrashRuleMatch  uriMatch = 2, cluster: cn, version: 582670, traceId: 6f2379f106870f670bf62834b0d4d0ee, regId: Hl0Pgoa7ZHevxyNm8hAYXAR7lHf7qqiPOCBNwBliblfcrP6DbOicg0yqTrPo5vxs
+08-25 17:45:01.031 13339 13392 D ThirdAppAssistant: RuleMatch parseCloudTraceMatchers version = 10
+08-25 17:45:01.033  2380  2935 E Launcher.Transfer: transfer is closed
+08-25 17:45:01.033 21238 21261 I htmlviewercloudcontrol: isStagingEnv:false param =  taa_SwitchStatus  uriMatch = 2, cluster: cn, version: 582670, traceId: 6f2379f106870f670bf62834b0d4d0ee, regId: Hl0Pgoa7ZHevxyNm8hAYXAR7lHf7qqiPOCBNwBliblfcrP6DbOicg0yqTrPo5vxs
+08-25 17:45:01.035 21238 21261 I htmlviewercloudcontrol: isStagingEnv:false param =  taa_ProblemList  uriMatch = 2, cluster: cn, version: 582670, traceId: 6f2379f106870f670bf62834b0d4d0ee, regId: Hl0Pgoa7ZHevxyNm8hAYXAR7lHf7qqiPOCBNwBliblfcrP6DbOicg0yqTrPo5vxs
+08-25 17:45:01.037 21238 21261 I htmlviewercloudcontrol: isStagingEnv:false param =  taa_ProblemList  uriMatch = 2, cluster: cn, version: 582670, traceId: 6f2379f106870f670bf62834b0d4d0ee, regId: Hl0Pgoa7ZHevxyNm8hAYXAR7lHf7qqiPOCBNwBliblfcrP6DbOicg0yqTrPo5vxs
+08-25 17:45:01.039 21238 21261 I htmlviewercloudcontrol: isStagingEnv:false param =  taa_SwitchStatus  uriMatch = 2, cluster: cn, version: 582670, traceId: 6f2379f106870f670bf62834b0d4d0ee, regId: Hl0Pgoa7ZHevxyNm8hAYXAR7lHf7qqiPOCBNwBliblfcrP6DbOicg0yqTrPo5vxs
+08-25 17:45:01.041 21238 21261 I htmlviewercloudcontrol: isStagingEnv:false param =  taa_SwitchStatus  uriMatch = 2, cluster: cn, version: 582670, traceId: 6f2379f106870f670bf62834b0d4d0ee, regId: Hl0Pgoa7ZHevxyNm8hAYXAR7lHf7qqiPOCBNwBliblfcrP6DbOicg0yqTrPo5vxs
+08-25 17:45:01.042 13339 13392 I ThirdAppAssistant: ExceptionManager match exception type failed for com.example.demo
+08-25 17:45:01.102  1334  1425 E mtk_storageproxyd: ipc-trustonic: ipc_trustonic_connect: retry left 9
+08-25 17:45:01.103  1334  1425 E mtk_storageproxyd: ipc-trustonic: ipc_trustonic_connect: Unable to resolve family name (-12)
+08-25 17:45:01.104  1026  1026 W SurfaceFlingerInspector: Slow frame composition: RegionSampling for 4627039422300187648 prepareFrame took 59 ms
