@@ -42,6 +42,9 @@
 
         <meta-data android:name="id.flutter.flutter_background_service.default_notification_channel_name" android:value="后台服务通知" />
         <meta-data android:name="id.flutter.flutter_background_service.default_notification_channel_description" android:value="用于保持应用在后台运行和播放音频" />
+        <meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="@drawable/ic_fgs_small" />
+        <meta-data android:name="com.google.firebase.messaging.default_notification_channel_id" android:value="background_service_channel" />
+        <meta-data android:name="id.flutter.flutter_background_service.notification_icon" android:resource="@drawable/ic_fgs_small" />
 
         <service
             android:name="id.flutter.flutter_background_service.BackgroundService"

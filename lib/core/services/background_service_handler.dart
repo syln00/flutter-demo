@@ -3,50 +3,94 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_background_service/flutter_background_service.dart';
-import 'package:flutter_background_service_android/flutter_background_service_android.dart';
+// Removed android-specific import to avoid using it in background isolate
 import 'package:just_audio/just_audio.dart';
+import 'package:flutter_local_notifications/flutter_local_notifications.dart';
+
+const String notificationChannelId = 'background_service_channel';
+const String notificationChannelName = '后台服务通知';
+const String notificationChannelDescription = '用于保持应用在后台运行和播放音频';
+const String alertChannelId = 'alert_channel';
+const String alertChannelName = '提醒通知';
+const String alertChannelDescription = '用于播放默认提示音的提醒通知';
+
+Future<void> _createNotificationChannel() async {
+  final flutterLocalNotificationsPlugin = FlutterLocalNotificationsPlugin();
+  const androidInitializationSettings = AndroidInitializationSettings('@drawable/ic_bg_service_small');
+  const initializationSettings = InitializationSettings(android: androidInitializationSettings);
+  await flutterLocalNotificationsPlugin.initialize(initializationSettings);
+
+  const androidChannel = AndroidNotificationChannel(
+    notificationChannelId,
+    notificationChannelName,
+    description: notificationChannelDescription,
+    importance: Importance.high,
+  );
+
+  await flutterLocalNotificationsPlugin
+      .resolvePlatformSpecificImplementation<AndroidFlutterLocalNotificationsPlugin>()
+      ?.createNotificationChannel(androidChannel);
+
+  // 创建带声音的提醒渠道（使用系统默认提示音）
+  const androidAlertChannel = AndroidNotificationChannel(
+    alertChannelId,
+    alertChannelName,
+    description: alertChannelDescription,
+    importance: Importance.high,
+    playSound: true,
+    enableVibration: true,
+  );
+
+  await flutterLocalNotificationsPlugin
+      .resolvePlatformSpecificImplementation<AndroidFlutterLocalNotificationsPlugin>()
+      ?.createNotificationChannel(androidAlertChannel);
+}
+
+Future<void> ensureNotificationChannelInitialized() async {
+  await _createNotificationChannel();
+}
+
+Future<void> _showAlertNotification({required String title, required String body}) async {
+  final plugin = FlutterLocalNotificationsPlugin();
+  const androidDetails = AndroidNotificationDetails(
+    alertChannelId,
+    alertChannelName,
+    channelDescription: alertChannelDescription,
+    importance: Importance.high,
+    priority: Priority.high,
+    playSound: true,
+    enableVibration: true,
+    icon: '@drawable/ic_bg_service_small',
+  );
+  const details = NotificationDetails(android: androidDetails);
+  await plugin.show(1001, title, body, details);
+}
 
 @pragma('vm:entry-point')
 Future<bool> onStart(ServiceInstance service) async {
   // 确保 Dart VM 的绑定已经初始化
   DartPluginRegistrant.ensureInitialized();
 
+  // 创建通知渠道
+  await _createNotificationChannel();
+
   final audioPlayer = AudioPlayer();
 
-  if (service is AndroidServiceInstance) {
-    service.on('setAsForeground').listen((event) {
-      service.setAsForegroundService();
-    });
-
-    service.on('setAsBackground').listen((event) {
-      service.setAsBackgroundService();
-    });
-  }
+  // Removed AndroidServiceInstance-specific listeners to avoid android-only API in background isolate
 
   service.on('stopService').listen((event) {
     service.stopSelf();
   });
 
   service.on('playAudio').listen((event) async {
-    try {
-      await audioPlayer.setUrl('https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3');
-      audioPlayer.play();
-      service.invoke('update', {'message': '音频播放成功'});
-    } catch (e) {
-      print("音频播放错误: $e");
-      service.invoke('update', {'message': '音频播放失败'});
-    }
+    // 改为触发带默认提示音的本地通知，避免网络不可达导致播放失败
+    await _showAlertNotification(title: '提醒', body: '后台任务触发提示音');
+    service.invoke('update', {'message': '已触发系统默认提示音'});
   });
 
   int count = 0;
   Timer.periodic(const Duration(seconds: 3), (timer) {
     count++;
-    if (service is AndroidServiceInstance) {
-      service.setForegroundNotificationInfo(
-        title: "后台服务运行中",
-        content: "计数器已运行 $count 次，时间: ${DateTime.now()}",
-      );
-    }
     service.invoke(
       'update',
       {

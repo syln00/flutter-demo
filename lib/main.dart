@@ -18,14 +18,16 @@ Future<void> initializeBackgroundService() async {
     ),
     // Android的配置
     androidConfiguration: AndroidConfiguration(
-      onStart: onStart, // 服务启动时执行的函数
-      isForegroundMode: true, // 启用前台模式
-      autoStart: true, // 应用启动时自动启动服务
-      notificationChannelId: 'my_foreground_service', // 添加通知渠道ID
-      // 前台服务通知的初始配置
+      onStart: onStart,
+      isForegroundMode: true,
+      autoStart: true,
+      notificationChannelId: notificationChannelId,
       foregroundServiceNotificationId: 888,
       initialNotificationTitle: '后台服务',
-      initialNotificationContent: '正在初始化...',
+      initialNotificationContent: '服务正在运行中...',
+      foregroundServiceTypes: [
+        AndroidForegroundType.mediaPlayback,
+      ],
     ),
   );
 }
@@ -52,6 +54,9 @@ void main() async { // main函数改为异步
 
   // 初始化 Firebase
   await Firebase.initializeApp();
+
+  // 预先创建通知渠道，避免服务启动时渠道未就绪
+  await ensureNotificationChannelInitialized();
 
   // 初始化后台服务
   await initializeBackgroundService();
