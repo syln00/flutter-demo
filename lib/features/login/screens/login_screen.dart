@@ -68,6 +68,7 @@ class _LoginScreenState extends State<LoginScreen> {
               decoration: const InputDecoration(
                 labelText: 'Username',
               ),
+              autofocus: true,
             ),
             TextField(
               controller: _passwordController,
