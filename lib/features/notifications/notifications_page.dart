@@ -1,49 +1,71 @@
-import 'package:demo/core/services/notification_service.dart';
-import 'package:demo/features/background_task/background_task_page.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'dart:async';
 
-/// 通知页面
-/// 现在是一个 ConsumerWidget，以便我们可以访问 Provider
-class NotificationsPage extends ConsumerWidget {
+import 'package:demo/core/services/order_notification_service.dart';
+import 'package:flutter/material.dart';
+
+class NotificationsPage extends StatefulWidget {
   const NotificationsPage({super.key});
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  State<NotificationsPage> createState() => _NotificationsPageState();
+}
+
+class _NotificationsPageState extends State<NotificationsPage> {
+  final OrderNotificationService _orderNotificationService =
+      OrderNotificationService();
+  Timer? _timer;
+  bool _isLoading = false;
+
+  @override
+  void initState() {
+    super.initState();
+    _startPolling();
+  }
+
+  @override
+  void dispose() {
+    _timer?.cancel();
+    super.dispose();
+  }
+
+  void _startPolling() {
+    _timer = Timer.periodic(const Duration(seconds: 30), (timer) {
+      _checkOrders();
+    });
+  }
+
+  Future<void> _checkOrders() async {
+    if (_isLoading) return;
+
+    setState(() {
+      _isLoading = true;
+    });
+
+    await _orderNotificationService.checkNewOrders();
+
+    setState(() {
+      _isLoading = false;
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('消息与任务'),
+        title: const Text('订单通知'),
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Text('点击下面的按钮来触发相应功能'),
+            if (_isLoading)
+              const CircularProgressIndicator()
+            else
+              const Text('每30秒自动查询新订单'),
             const SizedBox(height: 20),
             ElevatedButton(
-              onPressed: () async {
-                final notificationService = ref.read(notificationServiceProvider);
-                await notificationService.showSimpleNotification(
-                  title: '你好，Flutter！',
-                  body: '这是一个来自我们教学应用的本地通知。',
-                );
-                ScaffoldMessenger.of(context).showSnackBar(
-                  const SnackBar(
-                    content: Text('通知已发送，请检查系统通知栏'),
-                    duration: Duration(seconds: 2),
-                  ),
-                );
-              },
-              child: const Text('显示一个本地通知'),
-            ),
-            const SizedBox(height: 20),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(builder: (context) => const BackgroundTaskPage()),
-                );
-              },
-              child: const Text('进入后台任务页面'),
+              onPressed: _checkOrders,
+              child: const Text('立即查询订单'),
             ),
           ],
         ),

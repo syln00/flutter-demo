@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'dart:ui';
 
+import 'package:demo/core/services/order_notification_service.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_background_service/flutter_background_service.dart';
 // Removed android-specific import to avoid using it in background isolate
@@ -75,6 +76,7 @@ Future<bool> onStart(ServiceInstance service) async {
   await _createNotificationChannel();
 
   final audioPlayer = AudioPlayer();
+  final orderNotificationService = OrderNotificationService();
 
   // Removed AndroidServiceInstance-specific listeners to avoid android-only API in background isolate
 
@@ -97,6 +99,10 @@ Future<bool> onStart(ServiceInstance service) async {
         "count": count,
       },
     );
+  });
+
+  Timer.periodic(const Duration(seconds: 30), (timer) async {
+    await orderNotificationService.checkNewOrders();
   });
 
   return true;

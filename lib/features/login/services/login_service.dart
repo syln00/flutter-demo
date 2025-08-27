@@ -45,7 +45,8 @@ class LoginService {
 
     try {
       final response = await _dio.post(url, data: data);
-      if (response.data != null && response.data['code'] == 200) {
+      print(response.data);
+      if (response.data != null && response.data['code'] == 0) {
         return LoginResponse.fromJson(response.data['data']);
       } else {
         throw Exception('Login failed: ${response.data['message']}');
