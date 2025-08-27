@@ -1,5 +1,9 @@
+import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+
+/// 全局的 ScaffoldMessenger Key，用于在无 BuildContext 的场景显示横幅
+final GlobalKey<ScaffoldMessengerState> appScaffoldMessengerKey = GlobalKey<ScaffoldMessengerState>();
 
 /// 通知服务
 /// 封装了本地通知的初始化、权限请求和显示逻辑
@@ -85,6 +89,43 @@ class NotificationService {
       payload: 'simple_payload', // 附带的数据
     );
     print("Notification Shown");
+  }
+
+  /// 显示应用内横幅通知（MaterialBanner），3 秒后自动隐藏
+  void showInAppBanner({required String title, required String body}) {
+    final messenger = appScaffoldMessengerKey.currentState;
+    if (messenger == null) return;
+
+    // 先移除已有 Banner，避免叠加
+    messenger.hideCurrentMaterialBanner();
+
+    final banner = MaterialBanner(
+      content: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Text(title, style: const TextStyle(fontWeight: FontWeight.w600)),
+          const SizedBox(height: 4),
+          Text(body),
+        ],
+      ),
+      actions: [
+        TextButton(
+          onPressed: () => messenger.hideCurrentMaterialBanner(),
+          child: const Text('知道了'),
+        ),
+      ],
+      backgroundColor: const Color(0xFFEEF6FF),
+      elevation: 2,
+      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+    );
+
+    messenger.showMaterialBanner(banner);
+
+    Future.delayed(const Duration(seconds: 3), () {
+      // 若仍在显示则收起
+      messenger.hideCurrentMaterialBanner();
+    });
   }
 
   // --- Private Callbacks ---

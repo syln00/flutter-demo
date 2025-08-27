@@ -51,12 +51,15 @@ class OrderNotificationService {
             orderDispatchCount > 0 ||
             orderPickUpCount > 0 ||
             saleUndisposedCount > 0) {
-          await _notificationService.showSimpleNotification(
-            title: '您有新的订单',
-            body: '您有新的订单，请及时处理。',
-          );
+          const title = '您有新的订单';
+          const body = '您有新的订单，请及时处理。';
 
-          // Play short network sound first; fallback to local asset
+          // 系统通知
+          await _notificationService.showSimpleNotification(title: title, body: body);
+          // 应用内横幅
+          _notificationService.showInAppBanner(title: title, body: body);
+
+          // 声音
           const networkUrl = 'https://www.soundjay.com/buttons/sounds/button-3.mp3'; // ~1s
           const assetPath = 'assets/newOrder.mp3';
 

@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_background_service/flutter_background_service.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:demo/features/login/screens/login_screen.dart';
+import 'package:demo/core/services/notification_service.dart';
 
 
 /// 初始化后台服务
@@ -81,6 +82,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter 教学演示',
       debugShowCheckedModeBanner: false, // 隐藏右上角的Debug标签
+      scaffoldMessengerKey: appScaffoldMessengerKey,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
